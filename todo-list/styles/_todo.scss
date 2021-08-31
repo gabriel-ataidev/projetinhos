@@ -41,3 +41,44 @@ form{
         }
     }
 }
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .todo-list{
+        min-width: 25%;
+        list-style: none;
+        .todo{
+            display: flex;
+            flex-direction: row;
+            margin: 0.5rem;
+            background: white;
+            color: black;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            font-size: 3rem;
+            li{
+                font-size: 2rem;
+                flex: 1;
+                padding: 1rem 1.5rem;
+            }
+            .trash-btn, .complete-btn{
+                background: green;
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 1rem;
+            }
+            .trash-btn{
+                background: red;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+            }
+            .fa-check, .fa-trash{
+                pointer-events: none;
+            }
+        }
+    }
+}

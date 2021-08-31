@@ -95,4 +95,65 @@ form button:hover {
 form button .fa-plus {
   pointer-events: none;
 }
+
+.todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo-container .todo-list {
+  min-width: 25%;
+  list-style: none;
+}
+
+.todo-container .todo-list .todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 3rem;
+}
+
+.todo-container .todo-list .todo li {
+  font-size: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem 1.5rem;
+}
+
+.todo-container .todo-list .todo .trash-btn, .todo-container .todo-list .todo .complete-btn {
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.todo-container .todo-list .todo .trash-btn {
+  background: red;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.todo-container .todo-list .todo .fa-check, .todo-container .todo-list .todo .fa-trash {
+  pointer-events: none;
+}
 /*# sourceMappingURL=style.css.map */
