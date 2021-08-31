@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -41,5 +41,58 @@ li {
 
 ul {
   font-style: none;
+}
+
+body {
+  background: #131391;
+  color: white;
+}
+
+header, form {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  padding-top: 10rem;
+}
+
+form input, form button {
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  padding: 1.5rem;
+}
+
+form input {
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+form button {
+  cursor: pointer;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background: white;
+  color: #5656dd;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+form button:hover {
+  color: white;
+  background: #5656dd;
+}
+
+form button .fa-plus {
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+body{
+    background: #131391;
+    color: white;
+}
+header, form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    h1{
+        padding-top: 10rem;
+    }
+}
+form{
+    input, button{
+        border: none;
+        outline: none;
+        font-size: 3rem;
+        padding: 1.5rem;
+    }
+    input{
+        border-bottom-left-radius: 2rem;
+        border-top-left-radius: 2rem;
+
+    }
+    button{
+        cursor: pointer;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background: white;
+        color: #5656dd;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+            color: white;
+            background: #5656dd;
+        }
+        .fa-plus{
+            pointer-events: none;
+        }
+    }
+}
