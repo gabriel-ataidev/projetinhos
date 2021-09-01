@@ -12,8 +12,8 @@ filterOption.addEventListener('click', filterTodo);
 
 //functions
 function addTodo(e){
-    //creating the div
     e.preventDefault();
+    //creating the div
     const todoDiv = document.createElement('div');
     todoDiv.classList.add('todo');
     //creating the li
@@ -101,10 +101,37 @@ function removeLocalTodos(todo){
         todos = JSON.parse(localStorage.getItem('todos'));
     }
     const todoIndex = todo.children[0].innerText;
-    console.log(todoIndex);
     todos.splice(todos.indexOf(todoIndex), 1);
     localStorage.setItem('todos', JSON.stringify(todos));
 }
-function getTodos(e){
-    
+function getTodos(){
+    let todos;
+    if(localStorage.getItem('todos') === null){
+        todos = [];
+    }else{
+        todos = JSON.parse(localStorage.getItem('todos'));
+    }
+    todos.forEach(todo => {
+        //creating the div
+        const todoDiv = document.createElement('div');
+        todoDiv.classList.add('todo');
+        //creating the li
+        const newTodo = document.createElement('li');
+        newTodo.classList.add('todo-item');
+        todoDiv.appendChild(newTodo);
+        newTodo.innerText = todo;
+        todoInput.value = "";
+        //check mark button
+        const completedButton = document.createElement('button');
+        completedButton.classList.add('complete-btn');
+        completedButton.innerHTML = '<i class="fas fa-check"></i>';
+        todoDiv.appendChild(completedButton);
+        //trash mark button
+        const trashButton = document.createElement('button');
+        trashButton.classList.add('trash-btn');
+        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+        todoDiv.appendChild(trashButton);
+        //append to list
+        todoList.appendChild(todoDiv);
+    });
 }
