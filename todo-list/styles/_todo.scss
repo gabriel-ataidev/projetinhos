@@ -122,3 +122,23 @@ select{
         color: #7e7ef7;
     }
 }
+
+//media query
+
+@media (max-width: 750px) {
+    html {
+        font-size: 30%;
+    }
+    header{
+        padding: 0;
+        h1{
+            font-size: 10rem;
+            padding: 0;
+        }
+    }
+    .todo-container .todo-list .todo li {
+        font-size: 3rem;
+        flex: 1;
+        padding: 1rem 7rem;
+    }
+}
