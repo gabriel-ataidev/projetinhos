@@ -82,3 +82,38 @@ form{
         }
     }
 }
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+select{
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 2rem;
+    border: none;
+    margin-left: 2rem;
+    border-radius: 2rem;
+    &[open]:after{
+        transform: rotate(180deg);
+    }
+}
+.select{
+    position: relative;
+    &::after{
+        position: absolute;
+        color: #0d0daa;
+        content: '\25BC';
+        top: calc(50% - 0.7rem);
+        right: 2%;
+        padding: 0 1rem;
+        pointer-events: none;
+        font-size: 1.5rem;
+        transition: all 0.4s ease-in-out;
+    }
+    &:hover::after{
+        color: #7e7ef7;
+    }
+}

@@ -6,6 +6,7 @@ const todoList = document.querySelector('.todo-list');
 //event listeners
 todoButton.addEventListener('click', addTodo);
 
+
 //functions
 function addTodo(e){
     //creating the div

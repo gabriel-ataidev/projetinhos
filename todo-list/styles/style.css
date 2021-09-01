@@ -156,4 +156,48 @@ form button .fa-plus {
 .todo-container .todo-list .todo .fa-check, .todo-container .todo-list .todo .fa-trash {
   pointer-events: none;
 }
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2rem;
+  font-size: 2rem;
+  border: none;
+  margin-left: 2rem;
+  border-radius: 2rem;
+}
+
+select[open]:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.select {
+  position: relative;
+}
+
+.select::after {
+  position: absolute;
+  color: #0d0daa;
+  content: '\25BC';
+  top: calc(50% - 0.7rem);
+  right: 2%;
+  padding: 0 1rem;
+  pointer-events: none;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.select:hover::after {
+  color: #7e7ef7;
+}
 /*# sourceMappingURL=style.css.map */
