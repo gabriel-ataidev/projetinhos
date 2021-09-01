@@ -142,7 +142,7 @@ form button .fa-plus {
 }
 
 .todo-container .todo-list .todo .trash-btn, .todo-container .todo-list .todo .complete-btn {
-  background: green;
+  background: #008000;
   color: white;
   border: none;
   cursor: pointer;
