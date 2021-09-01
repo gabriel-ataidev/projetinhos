@@ -129,6 +129,8 @@ form button .fa-plus {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   font-size: 3rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .todo-container .todo-list .todo li {
@@ -160,6 +162,12 @@ form button .fa-plus {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.fall {
+  -webkit-transform: translateX(4rem);
+          transform: translateX(4rem);
+  opacity: 0;
 }
 
 select {

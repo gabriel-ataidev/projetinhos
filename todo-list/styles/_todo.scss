@@ -59,6 +59,7 @@ form{
             border-top-right-radius: 1rem;
             border-bottom-right-radius: 1rem;
             font-size: 3rem;
+            transition: all 0.5s ease-in-out;
             li{
                 font-size: 2rem;
                 flex: 1;
@@ -86,7 +87,10 @@ form{
     text-decoration: line-through;
     opacity: 0.5;
 }
-
+.fall{
+    transform: translateX(4rem);
+    opacity: 0;
+}
 select{
     appearance: none;
     outline: none;
