@@ -29,14 +29,34 @@ header{
         display: flex;
         padding: 3rem;
         input{
-            padding: 1rem;
+            font-size: 2rem;
+            outline: none;
+            padding: 1rem 1.5rem;
             border: 0.2rem solid #1fc1e9;
         }
         button{
+            cursor: pointer;
             padding: 1rem;
             color: white;
             border: none;
             background: #1fc1e9;
+        }
+    }
+}
+.nav-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        cursor: pointer;
+        color: white;
+        background: #1fc1e9;
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            background: #137791;
         }
     }
 }
