@@ -14,7 +14,20 @@ form.addEventListener('submit', e => {
     currentSearch = searchValue;
     searchPhotos(searchValue);
 });
+// more.addEventListener('click', loadMore);
+
 //functions
 function updateInput(e){
     searchValue = e.target.value;
+}
+async function fetchApi(url){
+    const dataFetch = await fetch(url, {
+        method: 'GET',
+        headers: {
+            Accept: 'application/json',
+            Authorization: auth
+        }
+    });
+    const data = await dataFetch.json();
+    return data;
 }
