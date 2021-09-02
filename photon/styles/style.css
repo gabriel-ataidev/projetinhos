@@ -112,6 +112,7 @@ header .search-form button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 4rem;
 }
 
 .nav-button button {
