@@ -13,4 +13,50 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem;
+  min-height: 30vh;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+}
+
+header .search-form input {
+  padding: 1rem;
+  border: 0.2rem solid #1fc1e9;
+}
+
+header .search-form button {
+  padding: 1rem;
+  color: white;
+  border: none;
+  background: #1fc1e9;
+}
 /*# sourceMappingURL=style.css.map */
