@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(45deg, #041780, #768afc);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#pomodoro-timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+#pomodoro-timer .timer {
+  margin-top: 5rem;
+  padding: 3rem;
+  font-size: 9rem;
+  font: 900 9rem 'Roboto', sans-serif;
+}
+
+#pomodoro-timer .btns button {
+  background: #ff9100;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  font: 500 1.3rem 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+#pomodoro-timer .btns button + button {
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

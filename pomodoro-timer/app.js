@@ -35,3 +35,4 @@ function resetCounter(){
     seconds = 00;
     updateCounterEl();
 }
+    
