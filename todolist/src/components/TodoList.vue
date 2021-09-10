@@ -7,12 +7,15 @@
       <li v-for="(item, index) in list" :key="index">
         <input type="checkbox" v-model="item.checked">
         <span :class="getItemClass(item.checked)">{{ item.label}}</span>
+        <span v-html="deleteIcon"></span>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import feather from 'feather-icons';
+
 export default {
   name: 'TodoList',
   data() {
@@ -24,6 +27,11 @@ export default {
   created() {
     const itensInLocalStorage = JSON.parse(localStorage.getItem('list'));
     this.list = itensInLocalStorage ? itensInLocalStorage : [];
+  },
+  computed: {
+    deleteIcon() {
+      return feather.icons.trash.toSvg({ 'width': 19})
+    }
   },
   methods: {
     getItemClass(itemChecked) {
