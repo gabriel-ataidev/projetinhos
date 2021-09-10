@@ -6,7 +6,7 @@
     <ul>
       <li v-for="(item, index) in list" :key="index">
         <input type="checkbox" v-model="item.checked">
-        {{ item.label}}
+        <span :class="getItemClass(item.checked)">{{ item.label}}</span>
       </li>
     </ul>
   </div>
@@ -26,6 +26,9 @@ export default {
     this.list = itensInLocalStorage ? itensInLocalStorage : [];
   },
   methods: {
+    getItemClass(itemChecked) {
+      return itemChecked ? 'item-checked' : '';
+    },
     addNewItemToList(event) {
       const newItem = event.target.value;
       this.list.unshift({
@@ -44,5 +47,8 @@ export default {
   ul{
     list-style: none;
     padding: 0;
+  }
+  .item-checked{
+    text-decoration: line-through;
   }
 </style>
