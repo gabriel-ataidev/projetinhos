@@ -12,21 +12,21 @@ body{
 .cards{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 150px;
     .card{
         font-weight: 700;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px;
+        height: fit-content;
         padding: 40px;
         background: #fff;
         color: #4e5063;
         border-radius: 10px;
-        filter: drop-shadow(5px 5px 5px rgba(121, 120, 120, 0.596));
+        filter: drop-shadow(5px 5px 10px rgba(121, 120, 120, 0.37));
         h1{
             font: 700 60px Montserrat;
-            justify-content: center;
             padding: 25px;
             span{
                 font-size: 30px;
@@ -39,8 +39,8 @@ body{
             padding: 10px;
             width: 100%;
             text-align: center;
-            border-top: 1px solid gray;
-            border-bottom: 1px solid gray;
+            border-top: 1px solid #d6d6d6;
+            border-bottom: 1px solid #d6d6d6;
         }
         p + p{
             border-top: 0px solid gray;
@@ -55,6 +55,16 @@ body{
             padding: 12px 0;
             border-radius: 8px;
             border: none;
+        }
+    }
+    .professional{
+        padding: 60px 40px;
+        filter: none;
+        background: #858ae7;
+        color: white;
+        button{
+            background: #fff;
+            color: #858ae7;
         }
     }
 }
