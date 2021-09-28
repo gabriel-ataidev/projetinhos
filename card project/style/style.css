@@ -34,6 +34,44 @@ body .bg-top {
   padding-top: 70px;
 }
 
+.toggle-btn input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.toggle-btn label {
+  display: block;
+  width: 60px;
+  height: 35px;
+  background-color: #858ae7;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 0 20px #477a8550;
+          box-shadow: 0 0 20px #477a8550;
+}
+
+.toggle-btn label::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-color: #e8f5f7;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  right: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.toggle-btn input:checked + label:after {
+  -webkit-transform: translateX(calc(-100% + 4px));
+          transform: translateX(calc(-100% + 4px));
+}
+
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;

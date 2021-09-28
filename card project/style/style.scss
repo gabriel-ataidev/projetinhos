@@ -1,89 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    font: 16px Montserrat, sans-serif;
-    background: #f7f7ff;
+body {
+  font: 16px Montserrat, sans-serif;
+  background: #f7f7ff;
+  position: relative;
+  height: 100vh;
+  img {
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .bg-bottom {
+    left: 0;
+    bottom: 0;
+  }
+  .bg-top {
+    right: 0;
+    top: 0;
+  }
+}
+.title {
+  text-align: center;
+  padding-top: 70px;
+}
+.toggle-btn {
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  label {
+    display: block;
+    width: 60px;
+    height: 35px;
+    background-color: #858ae7;
+    border-radius: 100px;
     position: relative;
-    height: 100vh;
-    img{
-        position: fixed;
-        z-index: -1;
-        overflow: hidden;
-    }
-    .bg-bottom{
-        left: 0;
-        bottom: 0;
-    }
-    .bg-top{
-        right: 0;
-        top: 0;
-    }
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #477a8550;
+  }
+  label::after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-color: #e8f5f7;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    right: 4px;
+    transition: 0.5s;
+  }
+  input:checked + label:after {
+    transform: translateX(calc(-100% + 4px));
+  }
 }
-.title{
-    text-align: center;
-    padding-top: 70px;
-}
-.cards{
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  .card {
+    font-weight: 700;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding-top: 150px;
-    .card{
-        font-weight: 700;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
-        padding: 40px;
-        background: #fff;
-        color: #4e5063;
-        border-radius: 10px;
-        filter: drop-shadow(5px 5px 10px rgba(121, 120, 120, 0.37));
-        h1{
-            font: 700 60px Montserrat;
-            padding: 25px;
-            span{
-                font-size: 30px;
-                top: 25px;
-            }
-        }
-        p{
-            font-size: 15px;
-            font-weight: 600;
-            padding: 10px;
-            width: 100%;
-            text-align: center;
-            border-top: 1px solid #d6d6d6;
-            border-bottom: 1px solid #d6d6d6;
-        }
-        p + p{
-            border-top: 0px solid gray;
-        }
-        button{
-            background: #858ae7;
-            color: #ffffff;
-            width: 100%;
-            font: 600 12px Montserrat;
-            margin: 20px;
-            margin-bottom: 0;
-            padding: 12px 0;
-            border-radius: 8px;
-            border: none;
-        }
+    height: fit-content;
+    padding: 40px;
+    background: #fff;
+    color: #4e5063;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 10px rgba(121, 120, 120, 0.37));
+    h1 {
+      font: 700 60px Montserrat;
+      padding: 25px;
+      span {
+        font-size: 30px;
+        top: 25px;
+      }
     }
-    .professional{
-        padding: 60px 40px;
-        filter: none;
-        background: #858ae7;
-        color: white;
-        button{
-            background: #fff;
-            color: #858ae7;
-        }
+    p {
+      font-size: 15px;
+      font-weight: 600;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid #d6d6d6;
+      border-bottom: 1px solid #d6d6d6;
     }
+    p + p {
+      border-top: 0px solid gray;
+    }
+    button {
+      background: #858ae7;
+      color: #ffffff;
+      width: 100%;
+      font: 600 12px Montserrat;
+      margin: 20px;
+      margin-bottom: 0;
+      padding: 12px 0;
+      border-radius: 8px;
+      border: none;
+    }
+  }
+  .professional {
+    padding: 60px 40px;
+    filter: none;
+    background: #858ae7;
+    color: white;
+    button {
+      background: #fff;
+      color: #858ae7;
+    }
+  }
 }
