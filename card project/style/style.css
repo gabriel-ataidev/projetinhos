@@ -1,1 +1,83 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px Montserrat, sans-serif;
+  background: #f7f7ff;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 150px;
+}
+
+.cards .card {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  padding: 40px;
+  background: #fff;
+  color: #4e5063;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(121, 120, 120, 0.596));
+          filter: drop-shadow(5px 5px 5px rgba(121, 120, 120, 0.596));
+}
+
+.cards .card h1 {
+  font: 700 60px Montserrat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px;
+}
+
+.cards .card h1 span {
+  font-size: 30px;
+  top: 25px;
+}
+
+.cards .card p {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.cards .card p + p {
+  border-top: 0px solid gray;
+}
+
+.cards .card button {
+  background: #858ae7;
+  color: #ffffff;
+  width: 100%;
+  font: 600 12px Montserrat;
+  margin: 20px;
+  margin-bottom: 0;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

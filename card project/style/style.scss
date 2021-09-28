@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 16px Montserrat, sans-serif;
+    background: #f7f7ff;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    .card{
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 40px;
+        background: #fff;
+        color: #4e5063;
+        border-radius: 10px;
+        filter: drop-shadow(5px 5px 5px rgba(121, 120, 120, 0.596));
+        h1{
+            font: 700 60px Montserrat;
+            justify-content: center;
+            padding: 25px;
+            span{
+                font-size: 30px;
+                top: 25px;
+            }
+        }
+        p{
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+        p + p{
+            border-top: 0px solid gray;
+        }
+        button{
+            background: #858ae7;
+            color: #ffffff;
+            width: 100%;
+            font: 600 12px Montserrat;
+            margin: 20px;
+            margin-bottom: 0;
+            padding: 12px 0;
+            border-radius: 8px;
+            border: none;
+        }
+    }
+}
