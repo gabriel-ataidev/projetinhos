@@ -14,7 +14,7 @@ body {
 }
 
 body img {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   overflow: hidden;
 }
@@ -27,6 +27,11 @@ body .bg-bottom {
 body .bg-top {
   right: 0;
   top: 0;
+}
+
+.title {
+  text-align: center;
+  padding-top: 70px;
 }
 
 .cards {
