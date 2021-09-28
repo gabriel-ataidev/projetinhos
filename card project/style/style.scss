@@ -8,12 +8,27 @@
 body{
     font: 16px Montserrat, sans-serif;
     background: #f7f7ff;
+    position: relative;
+    height: 100vh;
+    img{
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+    }
+    .bg-bottom{
+        left: 0;
+        bottom: 0;
+    }
+    .bg-top{
+        right: 0;
+        top: 0;
+    }
 }
 .cards{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    padding-top: 150px;
     .card{
         font-weight: 700;
         display: flex;
