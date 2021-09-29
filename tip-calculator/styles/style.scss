@@ -1,73 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: 'Space Mono', sans-serif;
-    background: #c5e4e7;
+body {
+  font-family: "Space Mono", sans-serif;
+  background: #c5e4e7;
 }
-input[type="text"], button{
-    font-family: "Space Mono", sans-serif;
+input[type="text"],
+button {
+  font-family: "Space Mono", sans-serif;
 }
-.logo{
-    padding: 80px;
-    margin: 0 auto;
-    text-align: center;
+.logo {
+  padding: 80px;
+  margin: 0 auto;
+  text-align: center;
 }
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #fff;
-    margin: 0 auto;
-    max-width: max-content;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fff;
+  margin: 0 auto;
+  max-width: max-content;
+  border-radius: 10px;
+  overflow: hidden;
+  .card {
+    max-width: 50%;
+    padding: 30px;
+    margin: 20px;
     border-radius: 10px;
-    overflow: hidden;
-    .card{
-        max-width: 50%;
-        padding: 30px;
-        margin: 20px;
-        border-radius: 10px;
+  }
+  .tip {
+    background: #fff;
+    padding: 5px;
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      color: #00494d;
     }
-    .tip{
-        background: #fff;
-        padding: 5px;
+    input {
+      position: relative;
+      background: #f4fafa;
+      color: #7f9c9f;
+      font-size: 18px;
+      width: 100%;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-align: right;
+      outline-color: hsl(172, 67%, 45%);
+      &::placeholder {
+        text-align: right;
+        color: #7f9c9f;
+        font-size: 18px;
+      }
     }
-    .result{
-        background: #00494d;
-        min-width: 300px;
-        .tip-amount, .total{
-            display: flex;
-            align-items: center;
-        }
-        .text{
-            color: #fff;
-            font-size: 11px;
-            flex: 1;
-            font-weight: 700;
-            span{
-                color: #a6b5b7;
-                font-size: 11px;
-            }
-        }
-        .value{
-            color: #26c0ab;
-            font-size: 35px;
-            font-weight: 700;
-        }
-        button{
-            color: #00494d;
-            font-weight: 700;
-            background: #0d686d;
-            border: none;
-            width: 100%;
-            padding: 7px 0;
-            border-radius: 8px;
-            margin-top: 90px;
-        }
+    label {
+      position: absolute;
+      z-index: 1;
+      padding: 10px;
     }
+    .tip-value {
+      button {
+        color: #ffffff;
+        font-weight: 700;
+        background: #0d686d;
+        border: none;
+        width: 80px;
+        padding: 7px 0;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: #0d686d;
+          background: hsl(172, 67%, 45%);
+        }
+        & + button {
+          margin-top: 10px;
+        }
+      }
+      .custom {
+        color: #0d686d;
+        background: #f4fafa;
+        width: 80px;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 10px;
+        &::placeholder {
+          font-size: 15px;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+    }
+    div + div {
+      margin-top: 30px;
+    }
+  }
+  .result {
+    background: #00494d;
+    min-width: 300px;
+    .tip-amount,
+    .total {
+      display: flex;
+      align-items: center;
+    }
+    .text {
+      color: #fff;
+      font-size: 11px;
+      flex: 1;
+      font-weight: 700;
+      span {
+        color: #a6b5b7;
+        font-size: 11px;
+      }
+    }
+    .value {
+      color: #26c0ab;
+      font-size: 35px;
+      font-weight: 700;
+    }
+    button {
+      color: #00494d;
+      font-weight: 700;
+      background: #0d686d;
+      border: none;
+      width: 100%;
+      padding: 7px 0;
+      border-radius: 8px;
+      margin-top: 90px;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        color: #0d686d;
+        background: hsl(172, 67%, 45%);
+      }
+    }
+  }
 }

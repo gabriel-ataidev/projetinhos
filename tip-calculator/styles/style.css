@@ -7,11 +7,12 @@
 }
 
 body {
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   background: #c5e4e7;
 }
 
-input[type="text"], button {
+input[type="text"],
+button {
   font-family: "Space Mono", sans-serif;
 }
 
@@ -55,12 +56,122 @@ input[type="text"], button {
   padding: 5px;
 }
 
+.container .tip p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #00494d;
+}
+
+.container .tip input {
+  position: relative;
+  background: #f4fafa;
+  color: #7f9c9f;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-align: right;
+  outline-color: #26c0ab;
+}
+
+.container .tip input::-webkit-input-placeholder {
+  text-align: right;
+  color: #7f9c9f;
+  font-size: 18px;
+}
+
+.container .tip input:-ms-input-placeholder {
+  text-align: right;
+  color: #7f9c9f;
+  font-size: 18px;
+}
+
+.container .tip input::-ms-input-placeholder {
+  text-align: right;
+  color: #7f9c9f;
+  font-size: 18px;
+}
+
+.container .tip input::placeholder {
+  text-align: right;
+  color: #7f9c9f;
+  font-size: 18px;
+}
+
+.container .tip label {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+}
+
+.container .tip .tip-value button {
+  color: #ffffff;
+  font-weight: 700;
+  background: #0d686d;
+  border: none;
+  width: 80px;
+  padding: 7px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.container .tip .tip-value button:hover {
+  color: #0d686d;
+  background: #26c0ab;
+}
+
+.container .tip .tip-value button + button {
+  margin-top: 10px;
+}
+
+.container .tip .tip-value .custom {
+  color: #0d686d;
+  background: #f4fafa;
+  width: 80px;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.container .tip .tip-value .custom::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container .tip .tip-value .custom:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container .tip .tip-value .custom::-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container .tip .tip-value .custom::placeholder {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container .tip div + div {
+  margin-top: 30px;
+}
+
 .container .result {
   background: #00494d;
   min-width: 300px;
 }
 
-.container .result .tip-amount, .container .result .total {
+.container .result .tip-amount,
+.container .result .total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,5 +209,13 @@ input[type="text"], button {
   padding: 7px 0;
   border-radius: 8px;
   margin-top: 90px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.container .result button:hover {
+  color: #0d686d;
+  background: #26c0ab;
 }
 /*# sourceMappingURL=style.css.map */
