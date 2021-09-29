@@ -76,6 +76,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   .card {
     font-weight: 700;
     display: flex;
@@ -135,4 +136,13 @@ body {
       color: #858ae7;
     }
   }
+}
+
+@media (max-width: 480px){
+    .cards{
+        padding-bottom: 40px;
+        .card + .card{
+            margin-top: 30px;
+        }
+    }
 }

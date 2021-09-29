@@ -107,6 +107,8 @@ body .bg-top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .cards .card {
@@ -191,5 +193,14 @@ body .bg-top {
 .cards .professional button {
   background: #fff;
   color: #858ae7;
+}
+
+@media (max-width: 480px) {
+  .cards {
+    padding-bottom: 40px;
+  }
+  .cards .card + .card {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
