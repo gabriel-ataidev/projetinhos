@@ -65,8 +65,9 @@ button {
 .container .tip input {
   position: relative;
   background: #f4fafa;
-  color: #7f9c9f;
+  color: #0d686d;
   font-size: 18px;
+  font-weight: 700;
   width: 100%;
   border: none;
   padding: 8px 16px;
