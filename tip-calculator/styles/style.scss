@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Space Mono', sans-serif;
+    background: #c5e4e7;
+    text-align: center;
+}
+input[type="text"], button{
+    font-family: "Space Mono", sans-serif;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    .card{
+        width: 50%;
+    }
+    .tip{
+        background: red;
+    }
+    .result{
+        background: blue;
+    }
+}
