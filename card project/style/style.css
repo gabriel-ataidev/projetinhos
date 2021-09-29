@@ -31,17 +31,43 @@ body .bg-top {
 
 .title {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 40px;
+  color: #757890;
 }
 
-.toggle-btn input[type="checkbox"] {
+.toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.toggle-container span {
+  padding-top: 20px;
+  color: #4e50636e;
+  font-weight: 600;
+}
+
+.toggle-container .toggle-btn {
+  padding: 10px 20px 30px;
+}
+
+.toggle-container .toggle-btn input[type="checkbox"] {
   width: 0;
   height: 0;
   visibility: hidden;
 }
 
-.toggle-btn label {
-  display: block;
+.toggle-container .toggle-btn label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 60px;
   height: 35px;
   background-color: #858ae7;
@@ -54,7 +80,7 @@ body .bg-top {
           box-shadow: 0 0 20px #477a8550;
 }
 
-.toggle-btn label::after {
+.toggle-container .toggle-btn label::after {
   content: "";
   width: 28px;
   height: 28px;
@@ -67,7 +93,7 @@ body .bg-top {
   transition: 0.5s;
 }
 
-.toggle-btn input:checked + label:after {
+.toggle-container .toggle-btn input:checked + label:after {
   -webkit-transform: translateX(calc(-100% + 4px));
           transform: translateX(calc(-100% + 4px));
 }
@@ -82,7 +108,6 @@ body .bg-top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 150px;
 }
 
 .cards .card {
@@ -111,11 +136,16 @@ body .bg-top {
 .cards .card h1 {
   font: 700 60px Montserrat;
   padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cards .card h1 span {
   font-size: 30px;
-  top: 25px;
 }
 
 .cards .card p {
@@ -142,6 +172,13 @@ body .bg-top {
   padding: 12px 0;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.cards .card button:hover {
+  opacity: 0.8;
 }
 
 .cards .professional {
