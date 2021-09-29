@@ -9,37 +9,94 @@
 body {
   font-family: 'Space Mono', sans-serif;
   background: #c5e4e7;
-  text-align: center;
 }
 
 input[type="text"], button {
   font-family: "Space Mono", sans-serif;
 }
 
+.logo {
+  padding: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background: #fff;
+  margin: 0 auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .container .card {
-  width: 50%;
+  max-width: 50%;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .container .tip {
-  background: red;
+  background: #fff;
+  padding: 5px;
 }
 
 .container .result {
-  background: blue;
+  background: #00494d;
+  min-width: 300px;
+}
+
+.container .result .tip-amount, .container .result .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .result .text {
+  color: #fff;
+  font-size: 11px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: 700;
+}
+
+.container .result .text span {
+  color: #a6b5b7;
+  font-size: 11px;
+}
+
+.container .result .value {
+  color: #26c0ab;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.container .result button {
+  color: #00494d;
+  font-weight: 700;
+  background: #0d686d;
+  border: none;
+  width: 100%;
+  padding: 7px 0;
+  border-radius: 8px;
+  margin-top: 90px;
 }
 /*# sourceMappingURL=style.css.map */

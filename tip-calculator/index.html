@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <img src="assets/images/logo.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tip calculator</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="logo"><img src="assets/images/logo.svg" /></div>
     <div class="container">
-        <div class="card tip">
-            <div class="bill-value">
-                <p>Bill</p>
-                <input type="text" name="bill" placeholder="0">
-                <label for="bill"><img src="./assets/images/icon-dollar.svg"></label>
-            </div>
-            <div class="tip-value">
-                <p>Select Tip %</p>
-                <button class="n5">5%</button>
-                <button class="n10">10%</button>
-                <button class="n15">15%</button>
-                <br>
-                <button class="n25">25%</button>
-                <button class="n50">50%</button>
-                <button class="custom">Custom</button>
-            </div>
-            <div class="person-quantity">
-                <p>Number of People</p>
-                <input type="text" name="bill" placeholder="0">
-                <label for="bill"><img src="./assets/images/icon-person.svg"></label>
-            </div>
+      <div class="card tip">
+        <div class="bill-value">
+          <p>Bill</p>
+          <input type="text" name="bill" placeholder="0" />
+          <label for="bill"
+            ><img src="./assets/images/icon-dollar.svg"
+          /></label>
         </div>
-        <div class="card result">
-            <div class="tip-amount">
-                <div class="text">
-                    <p>Tip Amount</p>
-                    <span>/ person</span>
-                </div>
-                <div class="value">
-                    <p>$0.00</p>
-                </div>
-            </div>
-            <div class="total">
-                <div class="text">
-                    <p>Total</p>
-                    <span>/ person</span>
-                </div>
-                <div class="value">
-                    <p>$0.00</p>
-                </div>
-            </div>
-            <button class="reset">RESET</button>
+        <div class="tip-value">
+          <p>Select Tip %</p>
+          <button class="n5">5%</button>
+          <button class="n10">10%</button>
+          <button class="n15">15%</button>
+          <br />
+          <button class="n25">25%</button>
+          <button class="n50">50%</button>
+          <button class="custom">Custom</button>
         </div>
-    </div>
+        <div class="person-quantity">
+          <p>Number of People</p>
+          <input type="text" name="bill" placeholder="0" />
+          <label for="bill"
+            ><img src="./assets/images/icon-person.svg"
+          /></label>
+        </div>
+      </div>
 
+      <div class="card result">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <div class="value">
+            <p>$0.00</p>
+          </div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+          <div class="value">
+            <p>$0.00</p>
+          </div>
+        </div>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+      
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
