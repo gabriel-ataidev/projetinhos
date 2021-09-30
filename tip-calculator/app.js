@@ -32,11 +32,13 @@ function submitCustom() {
 function submitPeople() {
   let peopleValue = peopleInput.value;
   //tip-amout
-  var tipAmount = parseFloat(((billValue * (tipValue - 1)) / peopleValue).toFixed(2));
-
-  console.log(tipAmount);
+  var tipAmount = parseFloat(
+    ((billValue * (tipValue - 1)) / peopleValue).toFixed(2)
+  );
   //total
-  var totalAmount = parseFloat(((billValue * tipValue) / peopleValue).toFixed(2));
+  var totalAmount = parseFloat(
+    ((billValue * tipValue) / peopleValue).toFixed(2)
+  );
   //the change of values
   tipNumber.innerHTML = tipAmount;
   totalNumber.innerHTML = totalAmount;

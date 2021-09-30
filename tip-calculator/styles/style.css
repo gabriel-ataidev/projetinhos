@@ -169,6 +169,7 @@ button {
 .container .result {
   background: #00494d;
   min-width: 300px;
+  padding-bottom: 15px;
 }
 
 .container .result .tip-amount,
@@ -209,7 +210,7 @@ button {
   width: 100%;
   padding: 7px 0;
   border-radius: 8px;
-  margin-top: 90px;
+  margin-top: 105px;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
