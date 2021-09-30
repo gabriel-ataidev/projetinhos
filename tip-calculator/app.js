@@ -7,6 +7,8 @@ const percentageButton10 = document.querySelector(".n10");
 const percentageButton15 = document.querySelector(".n15");
 const percentageButton25 = document.querySelector(".n25");
 const percentageButton50 = document.querySelector(".n50");
+var tipNumber = document.querySelector(".tip-number");
+var totalNumber = document.querySelector(".total-number");
 var tipValue;
 var billValue;
 
@@ -31,11 +33,13 @@ function submitPeople() {
   let peopleValue = peopleInput.value;
   //tip-amout
   var tipAmount = (billValue * (tipValue - 1)) / peopleValue;
+
   console.log(tipAmount);
   //total
   var totalAmount = (billValue * tipValue) / peopleValue;
   //the change of values
-  
+  tipNumber.innerHTML = tipAmount;
+  totalNumber.innerHTML = totalAmount;
 }
 function percentageValue5() {
   tipValue = 1 + 0.05;
