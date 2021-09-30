@@ -42,6 +42,8 @@ function submitPeople() {
   //the change of values
   tipNumber.innerHTML = tipAmount;
   totalNumber.innerHTML = totalAmount;
+  tipNumber.innerHTML = `$${tipAmount}`;
+  totalNumber.innerHTML = `$${totalAmount}`;
 }
 function percentageValue5() {
   tipValue = 1 + 0.05;
