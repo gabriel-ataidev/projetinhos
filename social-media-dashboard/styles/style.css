@@ -10,6 +10,24 @@ body {
   font: 400 14px Inter, sans-serif;
 }
 
+.background-color {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: red;
+  z-index: -10;
+}
+
+.background-color .bg-light-grey {
+  background-color: #202231;
+  height: 32vh;
+}
+
+.background-color .bg-dark-grey {
+  background-color: #1d2029;
+  height: 68vh;
+}
+
 .followers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,7 +35,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .followers .extra {
