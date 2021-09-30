@@ -145,3 +145,63 @@ button {
     }
   }
 }
+@media (max-width: 376px){
+  .logo{
+    padding: 20px;
+  }
+  .container{
+    padding-bottom: 20px;
+    .tip{
+      input{
+        font-size: 25px;
+        &::placeholder {
+          font-size: 25px;
+        }
+      }
+      label {
+        padding-top: 20px;
+        width: 25px;
+      }
+      p{
+        font-size: 17px;
+      }
+      .tip-value{
+        br{
+          display: none;
+        }
+        button{
+          font-size: 25px;
+          width: 145px;
+        }
+        .custom{
+          width: 145px;
+          height: 51px;
+          margin-top: 0;
+          font-size: 25px;
+          &::placeholder{
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    width: 100%;
+    .card{
+      min-width: 85%;
+      margin: 10px;
+    }
+    .result{
+      .text{
+        p{
+          font-size: 15px;
+        }
+        span{
+          font-size: 12px;
+        }
+      }
+      .reset{
+        margin-top: 30px;
+        font-size: 20px;
+      }
+    }
+  }
+}

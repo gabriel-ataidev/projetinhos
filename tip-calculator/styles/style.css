@@ -220,4 +220,75 @@ button {
   color: #0d686d;
   background: #26c0ab;
 }
+
+@media (max-width: 376px) {
+  .logo {
+    padding: 20px;
+  }
+  .container {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .container .tip input {
+    font-size: 25px;
+  }
+  .container .tip input::-webkit-input-placeholder {
+    font-size: 25px;
+  }
+  .container .tip input:-ms-input-placeholder {
+    font-size: 25px;
+  }
+  .container .tip input::-ms-input-placeholder {
+    font-size: 25px;
+  }
+  .container .tip input::placeholder {
+    font-size: 25px;
+  }
+  .container .tip label {
+    padding-top: 20px;
+    width: 25px;
+  }
+  .container .tip p {
+    font-size: 17px;
+  }
+  .container .tip .tip-value br {
+    display: none;
+  }
+  .container .tip .tip-value button {
+    font-size: 25px;
+    width: 145px;
+  }
+  .container .tip .tip-value .custom {
+    width: 145px;
+    height: 51px;
+    margin-top: 0;
+    font-size: 25px;
+  }
+  .container .tip .tip-value .custom::-webkit-input-placeholder {
+    font-size: 25px;
+  }
+  .container .tip .tip-value .custom:-ms-input-placeholder {
+    font-size: 25px;
+  }
+  .container .tip .tip-value .custom::-ms-input-placeholder {
+    font-size: 25px;
+  }
+  .container .tip .tip-value .custom::placeholder {
+    font-size: 25px;
+  }
+  .container .card {
+    min-width: 85%;
+    margin: 10px;
+  }
+  .container .result .text p {
+    font-size: 15px;
+  }
+  .container .result .text span {
+    font-size: 12px;
+  }
+  .container .result .reset {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
