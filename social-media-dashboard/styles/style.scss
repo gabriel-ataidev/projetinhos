@@ -12,15 +12,14 @@ body {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background: red;
   z-index: -10;
-  .bg-light-grey{
-      background-color: #202231;
-      height: 32vh;
+  .bg-light-grey {
+    background-color: #202231;
+    height: 32vh;
   }
-  .bg-dark-grey{
-      background-color: #1d2029;
-      height: 68vh;
+  .bg-dark-grey {
+    background-color: #1d2029;
+    height: 68vh;
   }
 }
 .followers {
@@ -33,52 +32,6 @@ body {
     overflow: hidden;
     margin: 0 20px;
   }
-  .followers-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #252a41;
-    width: fit-content;
-    height: fit-content;
-    padding: 20px 60px;
-    color: #8b97c6;
-    border-radius: 6px;
-    border-top: 4px solid #198ff5;
-    overflow: hidden;
-    & + .followers-card {
-      margin-left: 20px;
-    }
-    .user {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-      img {
-        padding: 8px;
-      }
-    }
-    .nr-followers {
-      color: #fff;
-      font-weight: 700;
-      font-size: 55px;
-    }
-    .text-followers {
-      letter-spacing: 5px;
-    }
-    .today {
-      display: flex;
-      align-items: center;
-      color: #1db489;
-      font-size: 12px;
-      margin-top: 25px;
-      img {
-        padding: 4px;
-      }
-      .down-today {
-        color: #dc414c;
-      }
-    }
-  }
   .insta-card {
     border-style: solid;
     border-width: 4px;
@@ -89,5 +42,110 @@ body {
   }
   .yt-card {
     border-color: #c4032a;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #252a41;
+  max-width: 253px;
+  height: fit-content;
+  padding: 20px 60px;
+  color: #8b97c6;
+  border-radius: 6px;
+  border-top: 4px solid #198ff5;
+  overflow: hidden;
+  & + .card {
+    margin-left: 20px;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    img {
+      padding: 8px;
+    }
+  }
+  .nr-followers {
+    color: #fff;
+    font-weight: 700;
+    font-size: 55px;
+  }
+  .text-followers {
+    letter-spacing: 5px;
+  }
+  .today {
+    display: flex;
+    align-items: center;
+    color: #1db489;
+    font-size: 12px;
+    margin-top: 25px;
+    img {
+      padding: 4px;
+    }
+    .down-today {
+      color: #dc414c;
+    }
+  }
+}
+.overview {
+  display: flex;
+  flex-direction: column;
+  h1{
+      width: 1085px;
+      margin: 0 auto;
+      padding: 25px 7px 15px;
+      color: #fff;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1085px;
+    margin: 0 auto;
+    .overview-card {
+        min-width: 253px;
+      border: none;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: space-between;
+      & + .overview-card {
+        margin-bottom: 20px;
+      }
+      .views {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+      .numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        .overview-nr {
+          font-size: 35px;
+        }
+        .percentage-nr {
+          display: flex;
+          align-items: center;
+          img {
+            padding: 0 3px;
+          }
+          .nr-today {
+            color: #1db489;
+          }
+          .down-today {
+            color: #dc414c;
+          }
+        }
+      }
+    }
+    .first-card {
+      margin: 0;
+    }
   }
 }

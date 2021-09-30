@@ -14,7 +14,6 @@ body {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background: red;
   z-index: -10;
 }
 
@@ -45,7 +44,22 @@ body {
   margin: 0 20px;
 }
 
-.followers .followers-card {
+.followers .insta-card {
+  border-style: solid;
+  border-width: 4px;
+  -o-border-image: linear-gradient(to right, #fdc468, #df4996) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996)) 1;
+     border-image: linear-gradient(to right, #fdc468, #df4996) 1;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.followers .yt-card {
+  border-color: #c4032a;
+}
+
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,9 +74,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #252a41;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 253px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -73,11 +85,11 @@ body {
   overflow: hidden;
 }
 
-.followers .followers-card + .followers-card {
+.card + .card {
   margin-left: 20px;
 }
 
-.followers .followers-card .user {
+.card .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,21 +99,21 @@ body {
   margin-bottom: 10px;
 }
 
-.followers .followers-card .user img {
+.card .user img {
   padding: 8px;
 }
 
-.followers .followers-card .nr-followers {
+.card .nr-followers {
   color: #fff;
   font-weight: 700;
   font-size: 55px;
 }
 
-.followers .followers-card .text-followers {
+.card .text-followers {
   letter-spacing: 5px;
 }
 
-.followers .followers-card .today {
+.card .today {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,26 +125,114 @@ body {
   margin-top: 25px;
 }
 
-.followers .followers-card .today img {
+.card .today img {
   padding: 4px;
 }
 
-.followers .followers-card .today .down-today {
+.card .today .down-today {
   color: #dc414c;
 }
 
-.followers .insta-card {
-  border-style: solid;
-  border-width: 4px;
-  -o-border-image: linear-gradient(to right, #fdc468, #df4996) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996)) 1;
-     border-image: linear-gradient(to right, #fdc468, #df4996) 1;
-  border-right: 0;
-  border-left: 0;
-  border-bottom: 0;
+.overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.followers .yt-card {
-  border-color: #c4032a;
+.overview h1 {
+  width: 1085px;
+  margin: 0 auto;
+  padding: 25px 7px 15px;
+  color: #fff;
+}
+
+.overview .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1085px;
+  margin: 0 auto;
+}
+
+.overview .card-container .overview-card {
+  min-width: 253px;
+  border: none;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.overview .card-container .overview-card + .overview-card {
+  margin-bottom: 20px;
+}
+
+.overview .card-container .overview-card .views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.overview .card-container .overview-card .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+.overview .card-container .overview-card .numbers .overview-nr {
+  font-size: 35px;
+}
+
+.overview .card-container .overview-card .numbers .percentage-nr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview .card-container .overview-card .numbers .percentage-nr img {
+  padding: 0 3px;
+}
+
+.overview .card-container .overview-card .numbers .percentage-nr .nr-today {
+  color: #1db489;
+}
+
+.overview .card-container .overview-card .numbers .percentage-nr .down-today {
+  color: #dc414c;
+}
+
+.overview .card-container .first-card {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
