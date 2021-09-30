@@ -1,8 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 400 14px Inter, sans-serif;
+}
+.followers {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
   .extra{
     border-radius: 5px;
     z-index: 2;
     overflow: hidden;
     margin: 0 20px;
+  }
+  .followers-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #252a41;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 60px;
+    color: #8b97c6;
+    border-radius: 6px;
+    border-top: 4px solid #198ff5;
+    overflow: hidden;
+    & + .followers-card {
+      margin-left: 20px;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      img {
+        padding: 8px;
+      }
+    }
+    .nr-followers {
+      color: #fff;
+      font-weight: 700;
+      font-size: 55px;
+    }
+    .text-followers {
+      letter-spacing: 5px;
+    }
+    .today {
+      display: flex;
+      align-items: center;
+      color: #1db489;
+      font-size: 12px;
+      margin-top: 25px;
+      img {
+        padding: 4px;
+      }
+      .down-today {
+        color: #dc414c;
+      }
+    }
   }
   .insta-card {
     border-style: solid;
@@ -12,3 +72,7 @@
     border-left: 0;
     border-bottom: 0;
   }
+  .yt-card{
+      border-color:  #c4032a;
+  }
+}
