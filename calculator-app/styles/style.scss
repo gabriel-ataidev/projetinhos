@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+button {
+  font: 700 32px Spartan, sans-serif;
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  .buttons {
+    display: grid;
+    grid-template-columns: [start] 90px [line1] 90px [line2] 90px [line3] 90px [end];
+    grid-template-rows: [start] 60px [row1] 60px [row2] 60px [row3] 60px [row4] 60px [end];
+    gap: 15px;
+    .reset {
+      grid-column-start: start;
+      grid-column-end: line2;
+    }
+    .equal {
+      grid-column-start: line2;
+      grid-column-end: end;
+    }
+  }
+}
