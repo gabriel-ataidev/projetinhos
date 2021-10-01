@@ -15,18 +15,35 @@ body {
   z-index: -10;
   .bg-light-grey {
     background-color: #202231;
-    height: 32vh;
+    height: 30vh;
   }
   .bg-dark-grey {
     background-color: #1d2029;
-    height: 68vh;
+    height: 70vh;
   }
 }
 header {
+  display: flex;
+  width: 1072px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  color: #646982;
+  margin: 0 auto;
+  h1 {
+    color: #fff;
+    font-size: 21px;
+    padding-bottom: 2px;
+  }
+  span{
+      font-weight: 700;
+      font-size: 12px;
+  }
   .toggle-container {
+    display: flex;
+    align-items: center;
     span {
-      color: #4e50636e;
-      font-weight: 600;
+      font-weight: 700;
     }
     .toggle-btn {
       padding: 10px 20px 30px;
@@ -66,7 +83,6 @@ header {
 .followers {
   display: flex;
   justify-content: center;
-  padding-top: 90px;
   .extra {
     border-radius: 5px;
     z-index: 2;
@@ -92,6 +108,7 @@ header {
   align-items: center;
   background: #252a41;
   max-width: 253px;
+  max-height: 210px;
   height: fit-content;
   padding: 20px 60px;
   color: #8b97c6;
@@ -134,20 +151,21 @@ header {
 .overview {
   display: flex;
   flex-direction: column;
-  h1{
-      width: 1085px;
-      margin: 0 auto;
-      padding: 25px 7px 15px;
-      color: #fff;
+  h1 {
+    width: 1072px;
+    margin: 0 auto;
+    padding: 25px 0 15px;
+    color: #fff;
   }
   .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1085px;
+    max-width: 1072px;
     margin: 0 auto;
     .overview-card {
-        min-width: 253px;
+      min-width: 253px;
+      max-height: 120px;
       border: none;
       padding: 20px;
       display: flex;

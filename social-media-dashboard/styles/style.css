@@ -19,17 +19,52 @@ body {
 
 .background-color .bg-light-grey {
   background-color: #202231;
-  height: 32vh;
+  height: 30vh;
 }
 
 .background-color .bg-dark-grey {
   background-color: #1d2029;
-  height: 68vh;
+  height: 70vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1072px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+  color: #646982;
+  margin: 0 auto;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 21px;
+  padding-bottom: 2px;
+}
+
+header span {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+header .toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .toggle-container span {
-  color: #4e50636e;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 header .toggle-container .toggle-btn {
@@ -84,7 +119,6 @@ header .toggle-container .toggle-btn input:checked + label:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 90px;
 }
 
 .followers .extra {
@@ -125,6 +159,7 @@ header .toggle-container .toggle-btn input:checked + label:after {
           align-items: center;
   background: #252a41;
   max-width: 253px;
+  max-height: 210px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -194,9 +229,9 @@ header .toggle-container .toggle-btn input:checked + label:after {
 }
 
 .overview h1 {
-  width: 1085px;
+  width: 1072px;
   margin: 0 auto;
-  padding: 25px 7px 15px;
+  padding: 25px 0 15px;
   color: #fff;
 }
 
@@ -209,12 +244,13 @@ header .toggle-container .toggle-btn input:checked + label:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1085px;
+  max-width: 1072px;
   margin: 0 auto;
 }
 
 .overview .card-container .overview-card {
   min-width: 253px;
+  max-height: 120px;
   border: none;
   padding: 20px;
   display: -webkit-box;
