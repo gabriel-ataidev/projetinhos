@@ -6,12 +6,16 @@
   padding: 0;
 }
 
-body,
-button {
-  font: 700 32px Spartan, sans-serif;
+body {
+  background: #3a4764;
 }
 
-.buttons-container {
+body,
+button {
+  font: 700 28px Spartan, sans-serif;
+}
+
+.calculator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +25,22 @@ button {
   margin-top: 150px;
 }
 
-.buttons-container .buttons {
+.calculator .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #232c43;
+  padding: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 9px;
+}
+
+.calculator .buttons-container .buttons {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: [start] 90px [line1] 90px [line2] 90px [line3] 90px [end];
@@ -31,15 +50,45 @@ button {
   gap: 15px;
 }
 
-.buttons-container .buttons .reset {
+.calculator .buttons-container .buttons .reset {
   -ms-grid-column: start;
       grid-column-start: start;
   grid-column-end: line2;
 }
 
-.buttons-container .buttons .equal {
+.calculator .buttons-container .buttons .equal {
   -ms-grid-column: line2;
       grid-column-start: line2;
   grid-column-end: end;
+}
+
+.calculator .buttons-container .buttons button {
+  color: #444b5a;
+  background: #fff;
+  border: 0;
+  border-bottom: 3px solid #b4a597;
+  border-radius: 9px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.calculator .buttons-container .buttons button:hover {
+  opacity: 0.8;
+}
+
+.calculator .buttons-container .buttons .reset,
+.calculator .buttons-container .buttons .del {
+  background: #637097;
+  border-color: #404e72;
+  color: #fff;
+  font-size: 18px;
+}
+
+.calculator .buttons-container .buttons .equal {
+  background: #d03f2f;
+  border-color: #93261a;
+  color: #fff;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */
