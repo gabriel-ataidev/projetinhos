@@ -374,4 +374,103 @@ header .toggle-container .toggle-btn input:checked + label:after {
 .overview-active .nr-followers {
   color: #000;
 }
+
+@media (max-width: 376px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: -webkit-fill-available;
+    max-width: -moz-available;
+    max-width: fill-available;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px 30px 0;
+  }
+  header .t-followers {
+    padding-bottom: 20px;
+  }
+  header .t-followers h1 {
+    font-size: 23px;
+  }
+  header .t-followers span {
+    font-size: 14px;
+  }
+  header .toggle-container {
+    border-top: 1px solid #646982;
+    padding: 0 0 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .followers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .followers .extra {
+    margin: 20px 0;
+  }
+  .followers .card {
+    padding: 50px;
+    margin: 0;
+    min-width: 320px;
+  }
+  .followers .card + .card {
+    margin-top: 20px;
+  }
+  .followers .card .nr-followers {
+    font-size: 55px;
+  }
+  .background-color {
+    position: fixed;
+    height: 100%;
+  }
+  .overview .overview-title {
+    max-width: 320px;
+    padding: 40px 0 30px;
+    font-weight: 400;
+  }
+  .overview .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .overview .card-container .card {
+    min-width: 320px;
+  }
+  .overview .card-container .card + .card {
+    margin: 0;
+    margin-top: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
