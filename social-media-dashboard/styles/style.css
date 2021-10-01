@@ -15,16 +15,22 @@ body {
   width: 100vw;
   position: fixed;
   z-index: -10;
+  background-color: #1d2029;
 }
 
 .background-color .bg-light-grey {
   background-color: #202231;
   height: 30vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.background-color .bg-dark-grey {
-  background-color: #1d2029;
-  height: 70vh;
+.active {
+  background-color: #fff;
+}
+
+.active .bg-light-grey {
+  background-color: #f8f8f8;
 }
 
 header {
@@ -49,6 +55,11 @@ header h1 {
   padding-bottom: 2px;
 }
 
+header .active {
+  color: #000;
+  background: inherit;
+}
+
 header span {
   font-weight: 700;
   font-size: 12px;
@@ -68,7 +79,7 @@ header .toggle-container span {
 }
 
 header .toggle-container .toggle-btn {
-  padding: 10px 20px 30px;
+  padding: 10px 0 30px 20px;
 }
 
 header .toggle-container .toggle-btn input[type="checkbox"] {
@@ -92,6 +103,14 @@ header .toggle-container .toggle-btn label {
   transition: 0.5s;
   -webkit-box-shadow: 0 0 20px #477a8550;
           box-shadow: 0 0 20px #477a8550;
+}
+
+header .toggle-container .toggle-btn .active {
+  background: #646982;
+}
+
+header .toggle-container .toggle-btn .active::after {
+  background-color: #fff;
 }
 
 header .toggle-container .toggle-btn label::after {
@@ -143,6 +162,18 @@ header .toggle-container .toggle-btn input:checked + label:after {
   border-color: #c4032a;
 }
 
+.followers-active .card {
+  background: #f0f3fa;
+}
+
+.followers-active .card:hover {
+  background: #dfe2e9;
+}
+
+.followers-active .card .nr-followers {
+  color: #000;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,6 +199,12 @@ header .toggle-container .toggle-btn input:checked + label:after {
   border-radius: 6px;
   border-top: 4px solid #198ff5;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  background: #2e3349;
 }
 
 .card + .card {
@@ -320,5 +357,21 @@ header .toggle-container .toggle-btn input:checked + label:after {
 
 .overview .card-container .first-card {
   margin: 0;
+}
+
+.overview-active h1 {
+  color: #8b90a3;
+}
+
+.overview-active .card {
+  background: #f0f3fa;
+}
+
+.overview-active .card:hover {
+  background: #dfe2e9;
+}
+
+.overview-active .nr-followers {
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
