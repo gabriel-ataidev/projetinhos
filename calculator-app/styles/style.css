@@ -11,21 +11,57 @@ body {
 }
 
 body,
-button {
+button, input {
   font: 700 28px Spartan, sans-serif;
 }
 
-.calculator {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.container .calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 150px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
-.calculator .buttons-container {
+.container .calculator .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: 26px;
+}
+
+.container .calculator .input-container {
+  width: 445px;
+  height: 100px;
+  border-radius: 9px;
+  padding: 25px;
+  margin: 20px 0;
+  background: #232c43;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 38px;
+  text-align: right;
+}
+
+.container .calculator .buttons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +76,7 @@ button {
   border-radius: 9px;
 }
 
-.calculator .buttons-container .buttons {
+.container .calculator .buttons-container .buttons {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: [start] 90px [line1] 90px [line2] 90px [line3] 90px [end];
@@ -50,19 +86,19 @@ button {
   gap: 15px;
 }
 
-.calculator .buttons-container .buttons .reset {
+.container .calculator .buttons-container .buttons .reset {
   -ms-grid-column: start;
       grid-column-start: start;
   grid-column-end: line2;
 }
 
-.calculator .buttons-container .buttons .equal {
+.container .calculator .buttons-container .buttons .equal {
   -ms-grid-column: line2;
       grid-column-start: line2;
   grid-column-end: end;
 }
 
-.calculator .buttons-container .buttons button {
+.container .calculator .buttons-container .buttons button {
   color: #444b5a;
   background: #fff;
   border: 0;
@@ -73,19 +109,19 @@ button {
   transition: all 0.4s ease-in-out;
 }
 
-.calculator .buttons-container .buttons button:hover {
+.container .calculator .buttons-container .buttons button:hover {
   opacity: 0.8;
 }
 
-.calculator .buttons-container .buttons .reset,
-.calculator .buttons-container .buttons .del {
+.container .calculator .buttons-container .buttons .reset,
+.container .calculator .buttons-container .buttons .del {
   background: #637097;
   border-color: #404e72;
   color: #fff;
   font-size: 18px;
 }
 
-.calculator .buttons-container .buttons .equal {
+.container .calculator .buttons-container .buttons .equal {
   background: #d03f2f;
   border-color: #93261a;
   color: #fff;
