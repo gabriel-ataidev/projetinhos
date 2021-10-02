@@ -1,5 +1,6 @@
 //SELECTORS
 const inputContainer = document.querySelector('.input-container');
+const container = document.querySelector('.container');
 
 //FUNCTIONS
 function click7() {
@@ -54,6 +55,8 @@ function clickReset() {
     inputContainer.value = '';
 }
 function clickEqual() {
-    inputContainer.value = parseFloat(eval(inputContainer.value).toFixed(2));
-    
+    inputContainer.value = parseFloat(eval(inputContainer.value).toFixed(2));  
+}
+function switchTheme() {
+    container.classList.toggle("active");
 }
