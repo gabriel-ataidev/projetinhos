@@ -116,3 +116,67 @@ body {
     }
   }
 }
+
+@media (max-width: 376px) {
+  .background {
+    max-width: 100vw;
+    .hills {
+      min-height: 230px;
+      max-width: 900px;
+    }
+  }
+  .content-container {
+      padding-top: 40px;
+    h1 {
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 7px;
+    }
+    .cards {
+      width: fit-content;
+      padding-top: 10px;
+      .card-content {
+        margin: 5px;
+        .card {
+          position: relative;
+          width: 80px;
+          height: 70px;
+          .bg-card {
+            height: 35px;
+            width: 80px;
+          }
+          .number-container {
+            h1 {
+              span {
+                font-size: 40px;
+                letter-spacing: 1px;
+              }
+              .left-ball {
+                position: absolute;
+                left: -6px;
+                top: -8px;
+                font-size: 45px;
+              }
+              .right-ball {
+                position: absolute;
+                right: -7px;
+                top: -8px;
+                font-size: 45px;
+              }
+            }
+          }
+        }
+        .text{
+            padding: 15px 0;
+            font-size: 8px;
+        }
+      }
+    }
+    .social-media {
+      padding-top: 270px;
+      .icon {
+        margin: 0 15px;
+      }
+    }
+  }
+}
