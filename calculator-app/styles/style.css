@@ -11,7 +11,8 @@ body {
 }
 
 body,
-button, input {
+button,
+input {
   font: 700 28px Spartan, sans-serif;
 }
 
@@ -33,7 +34,7 @@ button, input {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .container .calculator .title {
@@ -47,13 +48,95 @@ button, input {
   font-size: 26px;
 }
 
+.container .calculator .title span {
+  margin-top: auto;
+}
+
+.container .calculator .toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .calculator .toggle-container span {
+  font-size: 14px;
+  padding-right: 20px;
+  margin-top: auto;
+}
+
+.container .calculator .toggle-container .toggle-btn {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .calculator .toggle-container .toggle-btn span {
+  padding: 0;
+  font-size: 11px;
+  letter-spacing: 7px;
+  padding-left: 8px;
+  margin: 0 auto;
+}
+
+.container .calculator .toggle-container .toggle-btn input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.container .calculator .toggle-container .toggle-btn label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70px;
+  height: 25px;
+  background: #232c43;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 0 20px #477a8550;
+          box-shadow: 0 0 20px #477a8550;
+  z-index: 2;
+}
+
+.container .calculator .toggle-container .toggle-btn label::after {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-color: #d03f2f;
+  position: absolute;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .calculator .toggle-container .toggle-btn input:checked + label:after {
+  -webkit-transform: translateX(calc(100% + 27px));
+          transform: translateX(calc(100% + 27px));
+}
+
 .container .calculator .input-container {
   width: 445px;
   height: 100px;
   border-radius: 9px;
   padding: 25px;
   margin: 20px 0;
-  background: #232c43;
+  background: #1a2031;
   border: 0;
   outline: 0;
   color: white;

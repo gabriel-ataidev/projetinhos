@@ -8,7 +8,8 @@ body {
   background: #3a4764;
 }
 body,
-button, input {
+button,
+input {
   font: 700 28px Spartan, sans-serif;
 }
 .container {
@@ -18,12 +19,69 @@ button, input {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 50px;
-    .title{
+    margin-top: 20px;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      font-size: 26px;
+      span{
+        margin-top: auto;
+      }
+    }
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 14px;
+        padding-right: 20px;
+        margin-top: auto;
+      }
+      .toggle-btn {
+        padding: 0;
         display: flex;
-        justify-content: space-between;
-        color: white;
-        font-size: 26px;
+        flex-direction: column;
+        justify-content: center;
+        span{
+            padding: 0;
+            font-size: 11px;
+            letter-spacing: 7px;
+            padding-left: 8px;
+            margin: 0 auto;
+        }
+        input[type="checkbox"] {
+          width: 0;
+          height: 0;
+          visibility: hidden;
+        }
+        label {
+          display: flex;
+          
+          width: 70px;
+          height: 25px;
+          background: #232c43;
+          border-radius: 100px;
+          position: relative;
+          cursor: pointer;
+          transition: 0.5s;
+          box-shadow: 0 0 20px #477a8550;
+          z-index: 2;
+        }
+        label::after {
+          content: "";
+          width: 19px;
+          height: 19px;
+          background-color: hsl(6, 63%, 50%);
+          position: absolute;
+          border-radius: 50%;
+          top: 3px;
+          left: 3px;
+          transition: 0.5s;
+        }
+        input:checked + label:after {
+          transform: translateX(calc(100% + 27px));
+        }
+      }
     }
     .input-container {
       width: 445px;
@@ -31,13 +89,12 @@ button, input {
       border-radius: 9px;
       padding: 25px;
       margin: 20px 0;
-      background: #232c43;
+      background: #1a2031;
       border: 0;
       outline: 0;
       color: white;
       font-size: 38px;
       text-align: right;
-
     }
     .buttons-container {
       display: flex;
@@ -88,3 +145,6 @@ button, input {
     }
   }
 }
+// .active{
+
+// }
