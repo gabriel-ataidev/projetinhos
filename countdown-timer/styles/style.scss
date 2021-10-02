@@ -21,20 +21,23 @@ body {
     }
   }
 }
-.social-media {
-  display: flex;
-  justify-content: center;
-  padding-top: 550px;
-  a {
-    z-index: 2;
-    padding: 0 20px;
-    cursor: pointer;
-    
-}
-}
-
-svg {
-  path {
-    fill: #b1042f;
-  }
+.content-container{
+    .social-media {
+      display: flex;
+      justify-content: center;
+      padding-top: 330px;
+      .icon {
+        z-index: 2;
+        margin: 0 20px;
+        cursor: pointer;
+        &:hover {
+          svg {
+            path {
+              transition: all 0.4s ease-in-out;
+              fill: #b1042f;
+            }
+          }
+        }
+      }
+    }
 }
