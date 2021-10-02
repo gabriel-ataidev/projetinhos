@@ -9,11 +9,12 @@ body {
 }
 .background {
   position: fixed;
+  z-index: -10;
   .background-image {
     position: relative;
     min-height: 100vh;
     overflow: hidden;
-    background: hsl(234, 17%, 12%);
+    background: #211d2b;
     .hills {
       position: absolute;
       bottom: 0;
@@ -21,23 +22,80 @@ body {
     }
   }
 }
-.content-container{
-    .social-media {
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin: 100px 0 70px;
+  }
+  .cards {
+    display: flex;
+    .card-content {
       display: flex;
-      justify-content: center;
-      padding-top: 330px;
-      .icon {
-        z-index: 2;
-        margin: 0 20px;
-        cursor: pointer;
-        &:hover {
-          svg {
-            path {
-              transition: all 0.4s ease-in-out;
-              fill: #b1042f;
+      flex-direction: column;
+      margin: 15px;
+      .card {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin: 0 auto;
+        width: 130px;
+        height: 110px;
+        background: #34364f;
+        filter: drop-shadow(0px 10px 1px #1c1c28);
+        border-radius: 10px;
+        justify-content: center;
+        .bg-card {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 55px;
+          width: 130px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          background: #2c2c44;
+          opacity: 0.4;
+          z-index: 10;
+        }
+        .number-container {
+          h1 {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            font-size: 65px;
+            color: #e86086;
+            display: flex;
+            .left-ball {
+              position: absolute;
+              left: -7px;
+              top: -1px;
+              font-size: 60px;
+            }
+            .right-ball {
+              position: absolute;
+              right: -12px;
+              top: -1px;
+              font-size: 60px;
             }
           }
+          .left-ball,
+          .right-ball {
+            color: #201f2d;
+            display: flex;
+            align-items: center;
+          }
         }
+      }
+      .text {
+        text-align: center;
+        color: #5a586d;
+        font-size: 12px;
+        letter-spacing: 4px;
+        padding-top: 25px;
       }
     }
   }
