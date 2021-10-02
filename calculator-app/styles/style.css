@@ -34,7 +34,7 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .container .calculator .title {
@@ -209,6 +209,32 @@ input {
   border-color: #93261a;
   color: #fff;
   font-size: 24px;
+}
+
+.b-active {
+  background: #e6e6e6;
+}
+
+.active .calculator span {
+  color: #35352c;
+}
+
+.active .calculator .title .toggle-container .toggle-btn label {
+  background: #d1cccc;
+}
+
+.active .calculator .input-container {
+  color: #35352c;
+  background: white;
+}
+
+.active .calculator .buttons-container {
+  background: #d1cccc;
+}
+
+.active .calculator .buttons-container .buttons .del, .active .calculator .buttons-container .buttons .reset {
+  background: #377f86;
+  border: #1b5f65;
 }
 
 @media (max-width: 376px) {

@@ -1,6 +1,7 @@
 //SELECTORS
 const inputContainer = document.querySelector('.input-container');
 const container = document.querySelector('.container');
+const body = document.querySelector('body');
 
 //FUNCTIONS
 function click7() {
@@ -59,4 +60,5 @@ function clickEqual() {
 }
 function switchTheme() {
     container.classList.toggle("active");
+    body.classList.toggle("b-active");
 }
