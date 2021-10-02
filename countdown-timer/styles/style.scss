@@ -40,4 +40,21 @@ body {
         }
       }
     }
+  }
+  .social-media {
+    padding-top: 170px;
+    .icon {
+      z-index: 2;
+      margin: 0 20px;
+      cursor: pointer;
+      &:hover {
+        svg {
+          path {
+            transition: all 0.4s ease-in-out;
+            fill: #b1042f;
+          }
+        }
+      }
+    }
+  }
 }

@@ -12,13 +12,14 @@ body {
 
 .background {
   position: fixed;
+  z-index: -10;
 }
 
 .background .background-image {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background: #191a24;
+  background: #211d2b;
 }
 
 .background .background-image .hills {
@@ -27,14 +28,125 @@ body {
   left: 0;
 }
 
-.content-container .social-media {
+.content-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-container h1 {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin: 100px 0 70px;
+}
+
+.content-container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-container .cards .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+}
+
+.content-container .cards .card-content .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 130px;
+  height: 110px;
+  background: #34364f;
+  -webkit-filter: drop-shadow(0px 10px 1px #1c1c28);
+          filter: drop-shadow(0px 10px 1px #1c1c28);
+  border-radius: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 330px;
+}
+
+.content-container .cards .card-content .card .bg-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 130px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #2c2c44;
+  opacity: 0.4;
+  z-index: 10;
+}
+
+.content-container .cards .card-content .card .number-container h1 {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 65px;
+  color: #e86086;
+  display: flex;
+}
+
+.content-container .cards .card-content .card .number-container h1 .left-ball {
+  position: absolute;
+  left: -7px;
+  top: -1px;
+  font-size: 60px;
+}
+
+.content-container .cards .card-content .card .number-container h1 .right-ball {
+  position: absolute;
+  right: -12px;
+  top: -1px;
+  font-size: 60px;
+}
+
+.content-container .cards .card-content .card .number-container .left-ball,
+.content-container .cards .card-content .card .number-container .right-ball {
+  color: #201f2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-container .cards .card-content .text {
+  text-align: center;
+  color: #5a586d;
+  font-size: 12px;
+  letter-spacing: 4px;
+  padding-top: 25px;
+}
+
+.content-container .social-media {
+  padding-top: 170px;
 }
 
 .content-container .social-media .icon {
