@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 500 'Spartan', sans-serif 15px;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+  position: fixed;
+}
+
+.background .bg-image {
+  background: #5ba4a4;
+  max-height: 20vh;
+  overflow: hidden;
+}
+
+.background .bg-image img {
+  max-height: inherit;
+  min-width: 100vw;
+}
+/*# sourceMappingURL=style.css.map */
