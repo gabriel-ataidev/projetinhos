@@ -154,6 +154,10 @@ const cards = document.querySelector(".cards");
 
 function generateCard() {
   for (let i = 0; i < data.length; i++) {
+    //creating card div
+    let cardDiv = document.createElement("div");
+    cardDiv.classList.add("card");
+    cards.appendChild(cardDiv);
   }
 }
 generateCard();
