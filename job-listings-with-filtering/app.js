@@ -217,6 +217,22 @@ function generateCard() {
     let span3 = document.createElement("span");
     span3.innerText = data[i].location;
     line3Div.appendChild(span3);
+    //tools
+    let toolsDiv = document.createElement("div");
+    toolsDiv.classList.add("tools");
+    cardDiv.appendChild(toolsDiv);
+    for (let j = 0; j < data[i].tools.length; j++) {
+      let tool = document.createElement("span");
+      tool.innerText = data[i].tools[j];
+      tool.setAttribute("class", data[i].tools[j].toLowerCase());
+      toolsDiv.appendChild(tool);
+    }
+    for (let k = 0; k < data[i].languages.length; k++) {
+      let tool = document.createElement("span");
+      tool.innerText = data[i].languages[k];
+      tool.setAttribute("class", data[i].languages[k].toLowerCase());
+      toolsDiv.appendChild(tool);
+    }
   }
 }
 generateCard();
