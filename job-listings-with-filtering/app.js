@@ -236,3 +236,11 @@ function generateCard() {
   }
 }
 generateCard();
+
+//  trying to add eventListeners to the tools
+// let feature = (data[i].languages[k]).toLowerCase();
+// console.log(feature);
+// fe.addEventListener('click', filterDisplay);
+// function filterDisplay() {
+//     console.log(worked);
+// }
