@@ -232,7 +232,7 @@ button {
   padding-right: 15px;
 }
 
-.content .cards .card .technology {
+.content .cards .card .tools {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +244,7 @@ button {
           justify-content: flex-end;
 }
 
-.content .cards .card .technology span {
+.content .cards .card .tools span {
   font-size: 12px;
   border: none;
   padding: 9px 8px 6px;
@@ -257,7 +257,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-.content .cards .card .technology span:hover {
+.content .cards .card .tools span:hover {
   color: #eff6f7;
   background: #5ba4a4;
 }
@@ -324,7 +324,7 @@ button {
   .content .cards .card .text .line2 {
     padding: 20px 0;
   }
-  .content .cards .card .technology {
+  .content .cards .card .tools {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -336,7 +336,7 @@ button {
     margin: 20px 0;
     border-top: 1px solid #a2a3a3;
   }
-  .content .cards .card .technology span {
+  .content .cards .card .tools span {
     margin: 16px 16px 0 0;
   }
 }
