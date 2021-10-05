@@ -16,7 +16,6 @@ button {
 .background {
   height: 100vh;
   width: 100vw;
-  z-index: -10;
   position: fixed;
   background: #effafa;
 }
@@ -50,6 +49,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+  top: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,27 +66,42 @@ button {
           filter: drop-shadow(0px 1px 10px #6ec4c43d);
 }
 
-.content .filters .filter-card {
+.content .filters .filters-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.content .filters .filter-card button {
+.content .filters .filters-container .filter-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px;
+}
+
+.content .filters .filters-container .filter-card button {
   font-size: 12px;
   border: none;
   padding: 9px 8px 6px;
 }
 
-.content .filters .filter-card .text-button {
+.content .filters .filters-container .filter-card .text-button {
   background: #eff6f7;
   color: #5ba4a4;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-.content .filters .filter-card .x-button {
+.content .filters .filters-container .filter-card .x-button {
   background: #5ba4a4;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -93,19 +113,16 @@ button {
   transition: background-color 0.4s ease-in-out;
 }
 
-.content .filters .filter-card .x-button:hover {
+.content .filters .filters-container .filter-card .x-button:hover {
   background: #000;
 }
 
-.content .filters .filter-card .x-button img {
+.content .filters .filters-container .filter-card .x-button img {
   max-width: 12px;
   max-height: auto;
 }
 
 .content .filters .clear {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   text-align: right;
 }
 
@@ -126,6 +143,10 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content .cards .card {
@@ -157,7 +178,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 5px 20px;
-  min-height: 100%;
+  min-height: 88px;
 }
 
 .content .cards .card .text .line1 {
@@ -207,7 +228,7 @@ button {
 }
 
 .content .cards .card .text .line3 span + span::before {
-  content: '•';
+  content: "•";
   padding-right: 15px;
 }
 
@@ -239,5 +260,84 @@ button {
 .content .cards .card .technology span:hover {
   color: #eff6f7;
   background: #5ba4a4;
+}
+
+.content .cards .card-featured {
+  border-left: 5px solid #5ba4a4;
+}
+
+@media (max-width: 376px) {
+  .content {
+    max-height: 100%;
+  }
+  .content .filters {
+    padding: 10px 15px;
+    margin: 100px 25px 0;
+  }
+  .content .cards {
+    margin: 20px 25px;
+  }
+  .content .cards .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px 15px;
+    height: 100%;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    position: relative;
+  }
+  .content .cards .card .image {
+    position: absolute;
+    top: -30px;
+    left: 15px;
+  }
+  .content .cards .card .image img {
+    max-width: 50px;
+    height: auto;
+  }
+  .content .cards .card .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 30px;
+  }
+  .content .cards .card .text .line1 {
+    font-size: 16px;
+  }
+  .content .cards .card .text .line2 {
+    padding: 20px 0;
+  }
+  .content .cards .card .technology {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 20px 0;
+    border-top: 1px solid #a2a3a3;
+  }
+  .content .cards .card .technology span {
+    margin: 16px 16px 0 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
