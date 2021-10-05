@@ -176,6 +176,27 @@ function generateCard() {
     let companySpan = document.createElement("span");
     companySpan.innerText = data[i].company;
     line1Div.appendChild(companySpan);
+    for (let x = 0; x < data[i].new; x++) {
+      if (data[i].new == true) {
+        let colorCardDiv = document.createElement("span");
+        colorCardDiv.classList.add("color-card");
+        line1Div.appendChild(colorCardDiv);
+        colorCardDiv.innerText = "NEW!";
+        colorCardDiv.classList.add("new");
+        line1Div.appendChild(colorCardDiv);
+      }
+    }
+    for (let w = 0; w < data[i].featured; w++) {
+      if (data[i].featured == true) {
+        let colorCardDiv = document.createElement("span");
+        colorCardDiv.classList.add("color-card");
+        line1Div.appendChild(colorCardDiv);
+        colorCardDiv.innerText = "FEATURES!";
+        colorCardDiv.classList.add("featured");
+        line1Div.appendChild(colorCardDiv);
+        cardDiv.classList.add("card-featured");
+      }
+    }
   }
 }
 generateCard();
