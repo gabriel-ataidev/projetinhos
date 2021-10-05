@@ -197,6 +197,13 @@ function generateCard() {
         cardDiv.classList.add("card-featured");
       }
     }
+    //line2
+    let line2Div = document.createElement("div");
+    line2Div.classList.add("line2");
+    textDiv.appendChild(line2Div);
+    let h1 = document.createElement("h1");
+    h1.innerText = data[i].position;
+    line2Div.appendChild(h1);
   }
 }
 generateCard();
