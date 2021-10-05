@@ -165,6 +165,14 @@ function generateCard() {
     let img = document.createElement("IMG");
     img.setAttribute("src", data[i].logo);
     imageDiv.appendChild(img);
+    //creating text div
+    let textDiv = document.createElement("div");
+    textDiv.classList.add("text");
+    cardDiv.appendChild(textDiv);
+    //line1
+    let line1Div = document.createElement("div");
+    line1Div.classList.add("line1");
+    textDiv.appendChild(line1Div);
   }
 }
 generateCard();
