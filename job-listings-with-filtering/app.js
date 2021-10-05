@@ -173,6 +173,9 @@ function generateCard() {
     let line1Div = document.createElement("div");
     line1Div.classList.add("line1");
     textDiv.appendChild(line1Div);
+    let companySpan = document.createElement("span");
+    companySpan.innerText = data[i].company;
+    line1Div.appendChild(companySpan);
   }
 }
 generateCard();
