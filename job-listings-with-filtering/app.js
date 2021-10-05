@@ -150,3 +150,10 @@ const data = [
     tools: ["React", "Sass"],
   },
 ];
+const cards = document.querySelector(".cards");
+
+function generateCard() {
+  for (let i = 0; i < data.length; i++) {
+  }
+}
+generateCard();
