@@ -158,6 +158,13 @@ function generateCard() {
     let cardDiv = document.createElement("div");
     cardDiv.classList.add("card");
     cards.appendChild(cardDiv);
+    //creating image div
+    let imageDiv = document.createElement("div");
+    imageDiv.classList.add("image");
+    cardDiv.appendChild(imageDiv);
+    let img = document.createElement("IMG");
+    img.setAttribute("src", data[i].logo);
+    imageDiv.appendChild(img);
   }
 }
 generateCard();
