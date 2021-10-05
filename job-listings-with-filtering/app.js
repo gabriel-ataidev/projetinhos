@@ -204,6 +204,19 @@ function generateCard() {
     let h1 = document.createElement("h1");
     h1.innerText = data[i].position;
     line2Div.appendChild(h1);
+    //line3
+    let line3Div = document.createElement("div");
+    line3Div.classList.add("line3");
+    textDiv.appendChild(line3Div);
+    let span1 = document.createElement("span");
+    span1.innerText = data[i].postedAt;
+    line3Div.appendChild(span1);
+    let span2 = document.createElement("span");
+    span2.innerText = data[i].contract;
+    line3Div.appendChild(span2);
+    let span3 = document.createElement("span");
+    span3.innerText = data[i].location;
+    line3Div.appendChild(span3);
   }
 }
 generateCard();
