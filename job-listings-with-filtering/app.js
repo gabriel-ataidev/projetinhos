@@ -225,21 +225,25 @@ function generateCard() {
     let role = document.createElement("span");
     role.innerText = data[i].role;
     role.setAttribute("class", data[i].role.toLowerCase());
+    role.setAttribute("onclick", `${data[i].role.toLowerCase()}Button`);
     toolsDiv.appendChild(role);
     let level = document.createElement("span");
     level.innerText = data[i].level;
     level.setAttribute("class", data[i].level.toLowerCase());
+    level.setAttribute("onclick", `${data[i].level.toLowerCase()}Button`);
     toolsDiv.appendChild(level);
     for (let j = 0; j < data[i].tools.length; j++) {
       let tool = document.createElement("span");
       tool.innerText = data[i].tools[j];
       tool.setAttribute("class", data[i].tools[j].toLowerCase());
+      tool.setAttribute("onclick", `${data[i].tools[j].toLowerCase()}Button`);
       toolsDiv.appendChild(tool);
     }
     for (let k = 0; k < data[i].languages.length; k++) {
       let language = document.createElement("span");
       language.innerText = data[i].languages[k];
       language.setAttribute("class", data[i].languages[k].toLowerCase());
+      language.setAttribute("onclick", `${data[i].languages[k].toLowerCase()}Button`);
       toolsDiv.appendChild(language);
     }
   }
