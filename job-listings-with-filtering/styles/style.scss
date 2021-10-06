@@ -95,11 +95,12 @@ button {
   .cards {
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
     .card {
       background: #fff;
       display: flex;
       align-items: center;
-      margin-top: 40px;
+      margin-bottom: 20px;
       width: 100%;
       min-width: 80vw;
       padding: 20px 30px;
@@ -153,7 +154,7 @@ button {
           }
         }
       }
-      .tools {
+      .technologies {
         display: flex;
         flex: 1;
         justify-content: flex-end;
@@ -194,6 +195,8 @@ button {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px 15px;
+        margin: 0;
+        margin-top: 40px;
         height: 100%;
         min-height: fit-content;
         position: relative;
@@ -218,10 +221,14 @@ button {
           .line2 {
             padding: 20px 0;
           }
+          .line3 {
+            font-size: 13px;
+          }
         }
-        .tools {
+        .technologies {
           display: flex;
           flex-wrap: wrap;
+          width: 100%;
           justify-content: flex-start;
           margin: 20px 0;
           border-top: 1px solid #a2a3a3;

@@ -147,6 +147,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 40px;
 }
 
 .content .cards .card {
@@ -157,7 +158,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 40px;
+  margin-bottom: 20px;
   width: 100%;
   min-width: 80vw;
   padding: 20px 30px;
@@ -232,7 +233,7 @@ button {
   padding-right: 15px;
 }
 
-.content .cards .card .tools {
+.content .cards .card .technologies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +245,7 @@ button {
           justify-content: flex-end;
 }
 
-.content .cards .card .tools span {
+.content .cards .card .technologies span {
   font-size: 12px;
   border: none;
   padding: 9px 8px 6px;
@@ -257,7 +258,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-.content .cards .card .tools span:hover {
+.content .cards .card .technologies span:hover {
   color: #eff6f7;
   background: #5ba4a4;
 }
@@ -289,6 +290,8 @@ button {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 10px 15px;
+    margin: 0;
+    margin-top: 40px;
     height: 100%;
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
@@ -324,19 +327,23 @@ button {
   .content .cards .card .text .line2 {
     padding: 20px 0;
   }
-  .content .cards .card .tools {
+  .content .cards .card .text .line3 {
+    font-size: 13px;
+  }
+  .content .cards .card .technologies {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 20px 0;
     border-top: 1px solid #a2a3a3;
   }
-  .content .cards .card .tools span {
+  .content .cards .card .technologies span {
     margin: 16px 16px 0 0;
   }
 }

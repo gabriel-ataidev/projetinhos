@@ -217,9 +217,9 @@ function generateCard() {
     let span3 = document.createElement("span");
     span3.innerText = data[i].location;
     line3Div.appendChild(span3);
-    //tools
+    //technologies
     let toolsDiv = document.createElement("div");
-    toolsDiv.classList.add("tools");
+    toolsDiv.classList.add("technologies");
     cardDiv.appendChild(toolsDiv);
     for (let j = 0; j < data[i].tools.length; j++) {
       let tool = document.createElement("span");
@@ -228,10 +228,10 @@ function generateCard() {
       toolsDiv.appendChild(tool);
     }
     for (let k = 0; k < data[i].languages.length; k++) {
-      let tool = document.createElement("span");
-      tool.innerText = data[i].languages[k];
-      tool.setAttribute("class", data[i].languages[k].toLowerCase());
-      toolsDiv.appendChild(tool);
+      let language = document.createElement("span");
+      language.innerText = data[i].languages[k];
+      language.setAttribute("class", data[i].languages[k].toLowerCase());
+      toolsDiv.appendChild(language);
     }
   }
 }
