@@ -221,6 +221,15 @@ function generateCard() {
     let toolsDiv = document.createElement("div");
     toolsDiv.classList.add("technologies");
     cardDiv.appendChild(toolsDiv);
+    //each technology
+    let role = document.createElement("span");
+    role.innerText = data[i].role;
+    role.setAttribute("class", data[i].role.toLowerCase());
+    toolsDiv.appendChild(role);
+    let level = document.createElement("span");
+    level.innerText = data[i].level;
+    level.setAttribute("class", data[i].level.toLowerCase());
+    toolsDiv.appendChild(level);
     for (let j = 0; j < data[i].tools.length; j++) {
       let tool = document.createElement("span");
       tool.innerText = data[i].tools[j];
