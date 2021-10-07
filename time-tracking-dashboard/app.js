@@ -1,4 +1,4 @@
-let data = [
+const data = [
   {
     title: "Work",
     timeframes: {
@@ -102,14 +102,34 @@ let data = [
     },
   },
 ];
-console.log(data);
-let container = document.querySelector('.container');
-
-data.forEach( () => {
-    let CardDiv = document.createElement('div');
-    CardDiv.classList.add()
-    container.appendChild(CardDiv)
-    let CardText = document.createElement('span');
-    CardDiv.appendChild(CardText);
-    CardText.innerText = data[5].title;
-});
+const contentContainer = document.querySelector(".content-container");
+for (let i = 0; i < data.length; i++) {
+  const dailyBtn = document.querySelector(".daily");
+  timeCardDiv.classList.add("time-card");
+  contentContainer.appendChild(timeCardDiv);
+  const timeContentDiv = document.createElement("div");
+  timeContentDiv.classList.add("time-content");
+  timeCardDiv.appendChild(timeContentDiv);
+  const workDiv = document.createElement("div");
+  workDiv.classList.add("work");
+  timeContentDiv.appendChild(workDiv);
+  const titleSpan = document.createElement("span");
+  titleSpan.classList.add("title");
+  workDiv.appendChild(titleSpan);
+  titleSpan.innerText = data[i].title;
+  const dotsSpan = document.createElement("span");
+  dotsSpan.classList.add("dots");
+  workDiv.appendChild(dotsSpan);
+  dotsSpan.innerText = "•••";
+  const timeDiv = document.createElement("div");
+  timeDiv.classList.add("time");
+  timeContentDiv.appendChild(timeDiv);
+  const currentH1 = document.createElement("h1");
+  currentH1.classList.add("current");
+  timeDiv.appendChild(currentH1);
+  currentH1.innerText = `${data[i].timeframes.weekly.current}hrs`;
+  const text = document.createElement("p");
+  text.classList.add("text");
+  timeDiv.appendChild(text);
+  text.innerText = `Last Week - ${data[i].timeframes.weekly.previous}hrs`;
+}
