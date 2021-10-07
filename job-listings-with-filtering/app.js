@@ -511,3 +511,118 @@ function djangoButton() {
     djangoCard[r].classList.add("filter-active");
   }
 }
+
+//hide filter functions
+function hideFrontendFilter() {
+  for (var r = 0; r < 17; r++) {
+    const frontendCard = document.querySelectorAll(".frontend-card");
+    frontendCard[r].style.display = "none";
+    frontendFilter.classList.remove("filter-active");
+  }
+}
+function hideBackendFilter() {
+  for (var r = 0; r < 17; r++) {
+    const backendCard = document.querySelectorAll(".backend-card");
+    backendCard[r].style.display = "none";
+    backendFilter.classList.remove("filter-active");
+  }
+}
+function hideFullstackFilter() {
+  for (var r = 0; r < 17; r++) {
+    const fullstackCard = document.querySelectorAll(".fullstack-card");
+    fullstackCard[r].style.display = "none";
+    fullstackFilter.classList.remove("filter-active");
+  }
+}
+function hideHtmlFilter() {
+  for (var r = 0; r < 17; r++) {
+    const htmlCard = document.querySelectorAll(".html-card");
+    htmlCard[r].style.display = "none";
+    htmlFilter.classList.remove("filter-active");
+  }
+}
+function hideCssFilter() {
+  for (var r = 0; r < 17; r++) {
+    const cssCard = document.querySelectorAll(".css-card");
+    cssCard[r].style.display = "none";
+    cssFilter.classList.remove("filter-active");
+  }
+}
+function hideJavascriptFilter() {
+  for (var r = 0; r < 17; r++) {
+    const javascriptCard = document.querySelectorAll(".javascript-card");
+    javascriptCard[r].style.display = "none";
+    javascriptFilter.classList.remove("filter-active");
+  }
+}
+function hidePythonFilter() {
+  for (var r = 0; r < 17; r++) {
+    const pythonCard = document.querySelectorAll(".python-card");
+    pythonCard[r].style.display = "none";
+    pythonFilter.classList.remove("filter-active");
+  }
+}
+function hideReactFilter() {
+  for (var r = 0; r < 17; r++) {
+    const reactCard = document.querySelectorAll(".react-card");
+    reactCard[r].style.display = "none";
+    reactFilter.classList.remove("filter-active");
+  }
+}
+function hideRorFilter() {
+  for (var r = 0; r < 17; r++) {
+    const rorCard = document.querySelectorAll(".ror-card");
+    rorCard[r].style.display = "none";
+    rorFilter.classList.remove("filter-active");
+  }
+}
+function hideSassFilter() {
+  for (var r = 0; r < 17; r++) {
+    const sassCard = document.querySelectorAll(".sass-card");
+    sassCard[r].style.display = "none";
+    sassFilter.classList.remove("filter-active");
+  }
+}
+function hideVueFilter() {
+  for (var r = 0; r < 17; r++) {
+    const vueCard = document.querySelectorAll(".vue-card");
+    vueCard[r].style.display = "none";
+    vueFilter.classList.remove("filter-active");
+  }
+}
+function hideRubyFilter() {
+  for (var r = 0; r < 17; r++) {
+    const rubyCard = document.querySelectorAll(".ruby-card");
+    rubyCard[r].style.display = "none";
+    rubyFilter.classList.remove("filter-active");
+  }
+}
+function hideJuniorFilter() {
+  for (var r = 0; r < 17; r++) {
+    const juniorCard = document.querySelectorAll(".junior-card");
+    juniorCard[r].style.display = "none";
+    juniorFilter.classList.remove("filter-active");
+  }
+}
+function hideMidweightFilter() {
+  for (var r = 0; r < 17; r++) {
+    const midweightCard = document.querySelectorAll(".midweight-card");
+    midweightCard[r].style.display = "none";
+    midweightFilter.classList.remove("filter-active");
+  }
+}
+function hideSeniorFilter() {
+  for (var r = 0; r < 17; r++) {
+    const seniorCard = document.querySelectorAll(".senior-card");
+    seniorCard[r].style.display = "none";
+    seniorFilter.classList.remove("filter-active");
+  }
+}
+function hideDjangoFilter() {
+  for (var r = 0; r < 17; r++) {
+    const djangoCard = document.querySelectorAll(".django-card");
+    djangoCard[r].style.display = "none";
+    djangoFilter.classList.remove("filter-active");
+  }
+}
+
