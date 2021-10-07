@@ -150,7 +150,26 @@ const data = [
     tools: ["React", "Sass"],
   },
 ];
+//selectors
 const cards = document.querySelector(".cards");
+const filters = document.querySelector(".filters");
+const filterCard = document.querySelectorAll(".filter-card");
+const frontendFilter = document.querySelector(".frontend-filter");
+const backendFilter = document.querySelector(".backend-filter");
+const fullstackFilter = document.querySelector(".fullstack-filter");
+const htmlFilter = document.querySelector(".html-filter");
+const cssFilter = document.querySelector(".css-filter");
+const javascriptFilter = document.querySelector(".javascript-filter");
+const pythonFilter = document.querySelector(".python-filter");
+const reactFilter = document.querySelector(".react-filter");
+const rorFilter = document.querySelector(".ror-filter");
+const sassFilter = document.querySelector(".sass-filter");
+const vueFilter = document.querySelector(".vue-filter");
+const rubyFilter = document.querySelector(".ruby-filter");
+const juniorFilter = document.querySelector(".junior-filter");
+const midweightFilter = document.querySelector(".midweight-filter");
+const seniorFilter = document.querySelector(".senior-filter");
+const djangoFilter = document.querySelector(".django-filter");
 
 function generateCard() {
   for (let i = 0; i < data.length; i++) {
