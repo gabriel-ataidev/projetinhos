@@ -10,27 +10,39 @@
   <body>
     <div class="container">
       <div class="content-container">
-          <div class="profile-card">
-  
+        <div class="profile-card">
+          <div class="profile-content">
+            <img src="images/image-jeremy.png" />
+            <span>Report for</span>
+            <h1>Jeremy Robson</h1>
           </div>
-          <div class="time-card">
-            <img src="images/icon-work.svg">
-            <div class="time-content">
-              <div class="work">
-                <span class="title">Work</span>
-                <span class="dots">•••</span>
-              </div>
-              <div class="time">
-                <h1><span class="current">32</span>hrs</h1>
-                <p>Last <span class="period">Week</span> - <span class="previous">36</span>hrs</p>
-              </div>
+          <div class="periods">
+            <span class="period-text daily" onclick="showDailyValues()">Daily</span>
+            <span class="period-text weekly" onclick="showWeeklyValues()">Weekly</span>
+            <span class="period-text monthly" onclick="showMonthlyValues()">Monthly</span>
+          </div>
+        </div>
+        <div class="time-card">
+          <img src="images/icon-work.svg" />
+          <div class="time-content">
+            <div class="work">
+              <span class="title">Work</span>
+              <span class="dots">•••</span>
+            </div>
+            <div class="time">
+              <h1><span class="current">32</span>hrs</h1>
+              <p>
+                Last <span class="period">Week</span> -
+                <span class="previous">36</span>hrs
+              </p>
             </div>
           </div>
-          <div class="time-card"></div>
-          <div class="time-card"></div>
-          <div class="time-card"></div>
-          <div class="time-card"></div>
-          <div class="time-card"></div>
+        </div>
+        <div class="time-card"></div>
+        <div class="time-card"></div>
+        <div class="time-card"></div>
+        <div class="time-card"></div>
+        <div class="time-card"></div>
       </div>
     </div>
     <script src="app.js"></script>
