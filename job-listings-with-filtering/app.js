@@ -626,3 +626,27 @@ function hideDjangoFilter() {
   }
 }
 
+//the clear button
+function clearFilters() {
+  filters.style.display = "none";
+  frontendFilter.classList.remove("filter-active");
+  backendFilter.classList.remove("filter-active");
+  fullstackFilter.classList.remove("filter-active");
+  htmlFilter.classList.remove("filter-active");
+  cssFilter.classList.remove("filter-active");
+  javascriptFilter.classList.remove("filter-active");
+  pythonFilter.classList.remove("filter-active");
+  reactFilter.classList.remove("filter-active");
+  rorFilter.classList.remove("filter-active");
+  sassFilter.classList.remove("filter-active");
+  vueFilter.classList.remove("filter-active");
+  rubyFilter.classList.remove("filter-active");
+  juniorFilter.classList.remove("filter-active");
+  midweightFilter.classList.remove("filter-active");
+  seniorFilter.classList.remove("filter-active");
+  djangoFilter.classList.remove("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "flex";
+  }
+}
