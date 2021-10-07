@@ -46,11 +46,7 @@ button {
 
 .content .filters {
   background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: -webkit-sticky;
-  position: sticky;
+  display: none;
   z-index: 10;
   top: 80px;
   -ms-flex-wrap: wrap;
@@ -73,7 +69,6 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -82,9 +77,7 @@ button {
 }
 
 .content .filters .filters-container .filter-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin: 8px;
 }
 
@@ -122,6 +115,12 @@ button {
   max-height: auto;
 }
 
+.content .filters .filters-container .filter-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .content .filters .clear {
   text-align: right;
 }
@@ -137,6 +136,12 @@ button {
 .content .filters .clear a:hover {
   color: #5ba4a4;
   border-bottom: solid 2px #5ba4a4;
+}
+
+.content .filters-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .content .cards {
@@ -263,6 +268,10 @@ button {
   background: #5ba4a4;
 }
 
+.content .cards .card-disabled {
+  display: none;
+}
+
 .content .cards .card-featured {
   border-left: 5px solid #5ba4a4;
 }
@@ -276,7 +285,7 @@ button {
     margin: 100px 25px 0;
   }
   .content .cards {
-    margin: 20px 25px;
+    margin: 40px 25px;
   }
   .content .cards .card {
     display: -webkit-box;

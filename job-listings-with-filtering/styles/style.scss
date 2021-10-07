@@ -30,8 +30,7 @@ button {
   align-items: center;
   .filters {
     background: #fff;
-    display: flex;
-    position: sticky;
+    display: none;
     z-index: 10;
     top: 80px;
     flex-wrap: wrap;
@@ -44,11 +43,10 @@ button {
     .filters-container {
       display: flex;
       flex: 1;
-      display: flex;
       flex-wrap: wrap;
       align-items: center;
       .filter-card {
-        display: flex;
+        display: none;
         margin: 8px;
         button {
           font-size: 12px;
@@ -77,6 +75,9 @@ button {
           }
         }
       }
+      .filter-active{
+        display: flex;
+      }
     }
     .clear {
       text-align: right;
@@ -91,6 +92,9 @@ button {
         }
       }
     }
+  }
+  .filters-active{
+    display: flex;
   }
   .cards {
     display: flex;
@@ -175,6 +179,9 @@ button {
         }
       }
     }
+    .card-disabled{
+      display: none;
+    }
     .card-featured {
       border-left: 5px solid #5ba4a4;
     }
@@ -189,7 +196,7 @@ button {
       margin: 100px 25px 0;
     }
     .cards {
-      margin: 20px 25px;
+      margin: 40px 25px;
       .card {
         display: flex;
         flex-direction: column;
