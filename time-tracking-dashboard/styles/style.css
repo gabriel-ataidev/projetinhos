@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;1900;600;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,6 +7,37 @@
 }
 
 body {
-  font: 400 18px 'Rubik', sans-serif;
+  font: 400 18px "Rubik", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.container .content-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [first] 210px [line1] 210px [line2] 210px [line3] 210px [end];
+      grid-template-columns: [first] 210px [line1] 210px [line2] 210px [line3] 210px [end];
+  -ms-grid-rows: [first] 190px [mid-row] 190px [end];
+      grid-template-rows: [first] 190px [mid-row] 190px [end];
+  gap: 20px;
+}
+
+.container .content-container .profile-card {
+  background: blue;
+  grid-row: first / end;
+  border-radius: 10px;
+}
+
+.container .content-container .time-card {
+  background: red;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

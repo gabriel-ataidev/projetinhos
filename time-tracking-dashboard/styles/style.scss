@@ -1,9 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;1900;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    font: 400 18px 'Rubik', sans-serif;
+body {
+  font: 400 18px "Rubik", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  .content-container {
+    display: grid;
+    grid-template-columns: [first] 210px [line1] 210px[line2] 210px [line3] 210px [end];
+    grid-template-rows: [first] 190px [mid-row] 190px [end];
+    gap: 20px;
+    .profile-card {
+      background: blue;
+      grid-row: first / end;
+      border-radius: 10px;
+    }
+    .time-card {
+      background: red;
+      border-radius: 10px;
+    }
+  }
 }
