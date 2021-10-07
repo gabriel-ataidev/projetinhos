@@ -270,3 +270,244 @@ for (let i = 0; i < data.length; i++) {
   }
 }
 
+//giving the functionality to tech button
+function frontendButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  frontendFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const frontendCard = document.querySelectorAll(".frontend-card");
+    filters.style.display = "flex";
+    frontendCard[r].style.display = "flex";
+    frontendCard[r].classList.add("filter-active");
+  }
+}
+function backendButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  backendFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const backendCard = document.querySelectorAll(".backend-card");
+    filters.style.display = "flex";
+    backendCard[r].style.display = "flex";
+    backendCard[r].classList.add("filter-active");
+  }
+}
+function fullstackButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  fullstackFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const fullstackCard = document.querySelectorAll(".fullstack-card");
+    filters.style.display = "flex";
+    fullstackCard[r].style.display = "flex";
+    fullstackCard[r].classList.add("filter-active");
+  }
+}
+function htmlButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  htmlFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const htmlCard = document.querySelectorAll(".html-card");
+    filters.style.display = "flex";
+    htmlCard[r].style.display = "flex";
+    htmlCard[r].classList.add("filter-active");
+  }
+}
+function cssButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  cssFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const cssCard = document.querySelectorAll(".css-card");
+    filters.style.display = "flex";
+    cssCard[r].style.display = "flex";
+    cssCard[r].classList.add("filter-active");
+  }
+}
+function javascriptButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  javascriptFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const javascriptCard = document.querySelectorAll(".javascript-card");
+    filters.style.display = "flex";
+    javascriptCard[r].style.display = "flex";
+    javascriptCard[r].classList.add("filter-active");
+  }
+}
+function pythonButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  pythonFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const pythonCard = document.querySelectorAll(".python-card");
+    filters.style.display = "flex";
+    pythonCard[r].style.display = "flex";
+    pythonCard[r].classList.add("filter-active");
+  }
+}
+function reactButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  reactFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const reactCard = document.querySelectorAll(".react-card");
+    filters.style.display = "flex";
+    reactCard[r].style.display = "flex";
+    reactCard[r].classList.add("filter-active");
+  }
+}
+function rorButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  rorFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const rorCard = document.querySelectorAll(".ror-card");
+    filters.style.display = "flex";
+    rorCard[r].style.display = "flex";
+    rorCard[r].classList.add("filter-active");
+  }
+}
+function sassButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  sassFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const sassCard = document.querySelectorAll(".sass-card");
+    filters.style.display = "flex";
+    sassCard[r].style.display = "flex";
+    sassCard[r].classList.add("filter-active");
+  }
+}
+function vueButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  vueFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const vueCard = document.querySelectorAll(".vue-card");
+    filters.style.display = "flex";
+    vueCard[r].style.display = "flex";
+    vueCard[r].classList.add("filter-active");
+  }
+}
+function rubyButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  rubyFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const rubyCard = document.querySelectorAll(".ruby-card");
+    filters.style.display = "flex";
+    rubyCard[r].style.display = "flex";
+    rubyCard[r].classList.add("filter-active");
+  }
+}
+function juniorButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  juniorFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const juniorCard = document.querySelectorAll(".junior-card");
+    filters.style.display = "flex";
+    juniorCard[r].style.display = "flex";
+    juniorCard[r].classList.add("filter-active");
+  }
+}
+function midweightButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  midweightFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const midweightCard = document.querySelectorAll(".midweight-card");
+    filters.style.display = "flex";
+    midweightCard[r].style.display = "flex";
+    midweightCard[r].classList.add("filter-active");
+  }
+}
+function seniorButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  seniorFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const seniorCard = document.querySelectorAll(".senior-card");
+    filters.style.display = "flex";
+    seniorCard[r].style.display = "flex";
+    seniorCard[r].classList.add("filter-active");
+  }
+}
+function djangoButton() {
+  console.log("worked");
+  filters.classList.add("filters-active");
+  djangoFilter.classList.add("filter-active");
+  for (var r = 0; r < 10; r++) {
+    const card = document.querySelectorAll(".card");
+    card[r].style.display = "none";
+  }
+  for (var r = 0; r < 10; r++) {
+    const djangoCard = document.querySelectorAll(".django-card");
+    filters.style.display = "flex";
+    djangoCard[r].style.display = "flex";
+    djangoCard[r].classList.add("filter-active");
+  }
+}
