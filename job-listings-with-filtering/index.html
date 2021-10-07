@@ -8,111 +8,143 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-      <div class="background">
-        <div class="bg-image">
-          <img src="images/bg-header-desktop.svg" alt="" />
-        </div>
+    <div class="background">
+      <div class="bg-image">
+        <img src="images/bg-header-desktop.svg" alt="" />
       </div>
-      <section class="content">
+    </div>
+    <section class="content">
       <div class="filters">
         <div class="filters-container">
-            <div class="filter-card frontend-card">
-              <button class="text-button">Frontend</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card backend-card">
-              <button class="text-button">Backend</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card fullstack-card">
-              <button class="text-button">Fullstack</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <!-- <div class="filter-card junior-card">
-              <button class="text-button">Junior</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card midweight-card">
-              <button class="text-button">Midweight</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card senior-card">
-              <button class="text-button">Senior</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card html-card">
-              <button class="text-button">HTML</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card css-card">
-              <button class="text-button">CSS</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card javascript-card">
-              <button class="text-button">JavaScript</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card python-card">
-              <button class="text-button">Python</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card sass-card">
-              <button class="text-button">Sass</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card vue-card">
-              <button class="text-button">Vue</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card react-card">
-              <button class="text-button">React</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card django-card">
-              <button class="text-button">Django</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card ror-card">
-              <button class="text-button">RoR</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div>
-            <div class="filter-card ruby-card">
-              <button class="text-button">Ruby</button>
-              <button class="x-button"><img src="images/icon-remove.svg" /></button>
-            </div> -->
+          <div class="filter-card frontend-filter">
+            <button class="text-button frontend-filter">Frontend</button>
+            <button class="x-button" onclick="hideFrontendFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card backend-filter">
+            <button class="text-button">Backend</button>
+            <button class="x-button" onclick="hideBackendFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card fullstack-filter">
+            <button class="text-button">Fullstack</button>
+              <button class="x-button" onclick="hideFullstackFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card junior-filter">
+            <button class="text-button">Junior</button>
+            <button class="x-button" onclick="hideJuniorFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card midweight-filter">
+            <button class="text-button">Midweight</button>
+            <button class="x-button" onclick="hideMidweightFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card senior-filter">
+            <button class="text-button">Senior</button>
+            <button class="x-button" onclick="hideSeniorFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card html-filter">
+            <button class="text-button">HTML</button>
+            <button class="x-button" onclick="hideHtmlFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card css-filter">
+            <button class="text-button">CSS</button>
+            <button class="x-button" onclick="hideCssFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card javascript-filter">
+            <button class="text-button">JavaScript</button>
+            <button class="x-button" onclick="hideJavascriptFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card python-filter">
+            <button class="text-button">Python</button>
+            <button class="x-button" onclick="hidePythonFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card sass-filter">
+            <button class="text-button">Sass</button>
+            <button class="x-button" onclick="hideSassFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card vue-filter">
+            <button class="text-button">Vue</button>
+            <button class="x-button" onclick="hideVueFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card react-filter">
+            <button class="text-button">React</button>
+            <button class="x-button" onclick="hideReactFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card django-filter">
+            <button class="text-button">Django</button>
+            <button class="x-button" onclick="hideDjangoFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card ror-filter">
+            <button class="text-button">RoR</button>
+            <button class="x-button" onclick="hideRorFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
+          <div class="filter-card ruby-filter">
+            <button class="text-button">Ruby</button>
+            <button class="x-button" onclick="hideRubyFilter()">
+              <img src="images/icon-remove.svg" />
+            </button>
+          </div>
         </div>
-        <div class="clear">
+        <div class="clear" onclick="clearFilters()">
           <a>Clear</a>
         </div>
       </div>
       <div class="cards">
-          <div class="card card-featured">
-              <div class="image">
-                <img src="images/photosnap.svg">
-              </div>
-              <div class="text">
-                  <div class="line1">
-                    <span>Photosnap</span>
-                    <span class="color-card new">NEW!</span>
-                    <span class="color-card featured">FEATURED</span>
-                  </div>
-                  <div class="line2">
-                    <h1>Senior Frontend Developer</h1>
-                  </div>
-                  <div class="line3">
-                    <span>1d ago</span>
-                    <span>Full time</span>
-                    <span>USA only</span>
-                  </div>
-              </div>
-              <div class="technologies">
-                <span class="frontend">Frontend</span>
-                <span class="senior">Senior</span>
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="javascript">JavaScript</span>
-              </div>
+        <!-- <div class="card card-featured">
+          <div class="image">
+            <img src="images/photosnap.svg" />
           </div>
+          <div class="text">
+            <div class="line1">
+              <span>Photosnap</span>
+              <span class="color-card new">NEW!</span>
+              <span class="color-card featured">FEATURED</span>
+            </div>
+            <div class="line2">
+              <h1>Senior Frontend Developer</h1>
+            </div>
+            <div class="line3">
+              <span>1d ago</span>
+              <span>Full time</span>
+              <span>USA only</span>
+            </div>
+          </div>
+          <div class="technologies">
+            <span class="frontend">Frontend</span>
+            <span class="senior">Senior</span>
+            <span class="html">HTML</span>
+            <span class="css">CSS</span>
+            <span class="javascript">JavaScript</span>
+          </div>
+        </div> -->
       </div>
     </section>
 
