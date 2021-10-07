@@ -105,6 +105,32 @@ const data = [
 const contentContainer = document.querySelector(".content-container");
 for (let i = 0; i < data.length; i++) {
   const dailyBtn = document.querySelector(".daily");
+  dailyBtn.addEventListener("click", showDailyValues);
+  const weeklyBtn = document.querySelector(".weekly");
+  weeklyBtn.addEventListener("click", showWeeklyValues);
+  const monthlyBtn = document.querySelector(".monthly");
+  monthlyBtn.addEventListener("click", showMonthlyValues);
+  function showDailyValues() {
+    if (data[i].timeframes.daily.current <= 1) {
+      currentH1.innerText = `${data[i].timeframes.daily.current}hr`;
+    } else {
+      currentH1.innerText = `${data[i].timeframes.daily.current}hrs`;
+    }
+    if (data[i].timeframes.daily.previous <= 1) {
+      text.innerText = `Last Day - ${data[i].timeframes.daily.previous}hr`;
+    } else {
+      text.innerText = `Last Day - ${data[i].timeframes.daily.previous}hrs`;
+    }
+  }
+  function showWeeklyValues() {
+    currentH1.innerText = `${data[i].timeframes.weekly.current}hrs`;
+    text.innerText = `Last Week - ${data[i].timeframes.weekly.previous}hrs`;
+  }
+  function showMonthlyValues() {
+    currentH1.innerText = `${data[i].timeframes.monthly.current}hrs`;
+    text.innerText = `Last Month - ${data[i].timeframes.monthly.previous}hrs`;
+  }
+  const timeCardDiv = document.createElement("div");
   timeCardDiv.classList.add("time-card");
   contentContainer.appendChild(timeCardDiv);
   const timeContentDiv = document.createElement("div");
