@@ -7,7 +7,8 @@
 }
 
 body {
-  font: 400 18px "Rubik", sans-serif;
+  font: 300 18px "Rubik", sans-serif;
+  color: white;
 }
 
 .container {
@@ -31,13 +32,84 @@ body {
 }
 
 .container .content-container .profile-card {
-  background: blue;
+  background: #5847eb;
   grid-row: first / end;
   border-radius: 10px;
 }
 
 .container .content-container .time-card {
-  background: red;
+  background: #ff8b64;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .content-container .time-card img {
+  width: 55px;
+  height: auto;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  z-index: 1;
+}
+
+.container .content-container .time-card .time-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 80%;
+  min-width: 100%;
+  background: #1d204b;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.container .content-container .time-card .time-content:hover {
+  opacity: 0.9;
+}
+
+.container .content-container .time-card .time-content .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.container .content-container .time-card .time-content .work .dots {
+  cursor: pointer;
+  color: #b4b5c0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.container .content-container .time-card .time-content .work .dots:hover {
+  color: #fff;
+}
+
+.container .content-container .time-card .time-content .time h1 {
+  margin-bottom: 15px;
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+
+.container .content-container .time-card .time-content .time p {
+  font-size: 14px;
+  color: #696d9f;
 }
 /*# sourceMappingURL=style.css.map */

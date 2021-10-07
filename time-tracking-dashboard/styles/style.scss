@@ -5,7 +5,8 @@
   padding: 0;
 }
 body {
-  font: 400 18px "Rubik", sans-serif;
+  font: 300 18px "Rubik", sans-serif;
+  color: white;
 }
 .container {
   display: flex;
@@ -17,13 +18,65 @@ body {
     grid-template-rows: [first] 190px [mid-row] 190px [end];
     gap: 20px;
     .profile-card {
-      background: blue;
+      background: #5847eb;
       grid-row: first / end;
       border-radius: 10px;
     }
     .time-card {
-      background: red;
+      background: #ff8b64;
       border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 55px;
+        height: auto;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        z-index: 1;
+      }
+      .time-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 80%;
+        min-width: 100%;
+        background: #1d204b;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        padding: 20px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          opacity: 0.9;
+        }
+        .work {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+          .dots {
+            cursor: pointer;
+            color: #b4b5c0;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+        .time {
+          h1 {
+            margin-bottom: 15px;
+            font-size: 42px;
+            letter-spacing: 2px;
+          }
+          p {
+            font-size: 14px;
+            color: #696d9f;
+          }
+        }
+      }
     }
   }
 }
