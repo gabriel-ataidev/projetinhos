@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background: #0d1323;
+}
 body,
 h1 {
   font: 300 18px "Rubik", sans-serif;
@@ -31,7 +34,7 @@ h1 {
         img {
           width: 65px;
           height: auto;
-          border: 2px solid #fff;
+          border: 3px solid #fff;
           border-radius: 50%;
           margin-bottom: 30px;
         }
@@ -44,11 +47,11 @@ h1 {
         }
       }
       .periods {
-          display: flex;
-          min-height: fit-content;
-          flex-direction: column;
-          padding: 20px;
-          justify-content: space-between;
+        display: flex;
+        min-height: fit-content;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-between;
         span {
           cursor: pointer;
           color: #b4b5c0;
@@ -63,7 +66,7 @@ h1 {
       }
     }
     .time-card {
-      background: #ff8b64;
+      background: #f1c65b;
       border-radius: 10px;
       position: relative;
       overflow: hidden;
@@ -91,7 +94,7 @@ h1 {
         padding: 20px;
         transition: all 0.4s ease-in-out;
         &:hover {
-          opacity: 0.9;
+          background: #282c66;
         }
         .work {
           display: flex;
@@ -117,6 +120,70 @@ h1 {
             color: #696d9f;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .container {
+    margin-top: 70px;
+    .content-container {
+      display: grid;
+      grid-template-columns: [first] 330px [end];
+      grid-template-rows: [first] 190px [row-1] 180px [row-2] 180px [row-3] 180px [row-4] 180px [row-5] 180px[end];
+      .profile-card {
+        grid-row: first / row-1;
+        .profile-content {
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 0;
+          img {
+            min-width: 70px;
+            min-height: auto;
+            margin: 0 20px 20px 10px;
+          }
+          .name {
+            max-height: 60px;
+            margin-top: 9px;
+            span {
+              font-size: 17px;
+            }
+            h1 {
+              font-size: 25px;
+            }
+          }
+        }
+        .periods {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          span {
+            font-size: 19px;
+          }
+        }
+      }
+      .time-card{
+          img{
+              width:68px;
+          }
+          .time-content{
+              padding: 30px;
+              font-weight: 400;
+              .work{
+                  font-size: 20px;
+              }
+              .time{
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: space-between;
+                  h1{
+                      margin: 0;
+                      font-size: 37px;
+                  }
+              }
+          }
       }
     }
   }
