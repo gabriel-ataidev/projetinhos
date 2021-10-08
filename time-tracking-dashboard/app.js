@@ -1,6 +1,8 @@
 const data = [
   {
     title: "Work",
+    background: "#ff8b64",
+    image: "./images/icon-work.svg",
     timeframes: {
       daily: {
         current: 5,
@@ -18,6 +20,8 @@ const data = [
   },
   {
     title: "Play",
+    background: "#56c2e6",
+    image: "./images/icon-play.svg",
     timeframes: {
       daily: {
         current: 1,
@@ -35,6 +39,8 @@ const data = [
   },
   {
     title: "Study",
+    background: "#ff5c7c",
+    image: "./images/icon-study.svg",
     timeframes: {
       daily: {
         current: 0,
@@ -52,6 +58,8 @@ const data = [
   },
   {
     title: "Exercise",
+    background: "#4acf81",
+    image: "./images/icon-exercise.svg",
     timeframes: {
       daily: {
         current: 1,
@@ -69,6 +77,8 @@ const data = [
   },
   {
     title: "Social",
+    background: "#7536d3",
+    image: "./images/icon-social.svg",
     timeframes: {
       daily: {
         current: 1,
@@ -86,6 +96,8 @@ const data = [
   },
   {
     title: "Self Care",
+    background: "#f1c65b",
+    image: "./images/icon-self-care.svg",
     timeframes: {
       daily: {
         current: 0,
@@ -133,6 +145,10 @@ for (let i = 0; i < data.length; i++) {
   const timeCardDiv = document.createElement("div");
   timeCardDiv.classList.add("time-card");
   contentContainer.appendChild(timeCardDiv);
+  timeCardDiv.style.background = data[i].background;
+  const img = document.createElement("IMG");
+  img.setAttribute("src", data[i].image);
+  timeCardDiv.appendChild(img);
   const timeContentDiv = document.createElement("div");
   timeContentDiv.classList.add("time-content");
   timeCardDiv.appendChild(timeContentDiv);
