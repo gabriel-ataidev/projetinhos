@@ -51,6 +51,18 @@ section .title {
   color: #fff;
 }
 
+section .title span {
+  position: relative;
+  cursor: pointer;
+  padding-right: 26px;
+}
+
+section .title span img {
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
+
 section .input-container {
   position: relative;
 }
@@ -97,6 +109,12 @@ section .content-container .profile-header {
   -ms-grid-rows: [start] 140px [end];
       grid-template-rows: [start] 140px [end];
   padding: 30px 30px 5px;
+}
+
+section .content-container .profile-header #profile-picture {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
 }
 
 section .content-container .profile-header .text {

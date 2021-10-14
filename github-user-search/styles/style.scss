@@ -31,6 +31,16 @@ section {
     justify-content: space-between;
     flex: 1;
     color: #fff;
+    span{
+        position: relative;
+        cursor: pointer;
+        padding-right: 26px;
+        img{
+            position: absolute;
+            top: 3px;
+            right: 0;
+        }
+    }
   }
   .input-container {
     position: relative;
@@ -69,6 +79,11 @@ section {
       grid-template-columns: [start] 160px [line1] 580px [end];
       grid-template-rows: [start] 140px [end];
       padding: 30px 30px 5px;
+      #profile-picture{
+          width: 117px;
+          height: 117px;
+          border-radius: 50%;
+      }
       .text{
         display: grid;
         grid-template-columns: [start] 290px [line1] 290px [end];
