@@ -1,9 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body, button{
-    font: 400 20px 'Space Mono', sans-serif;
+body {
+  background: #141c2f;
+}
+body,
+button,
+h1,
+input {
+  font: 700 17px "Space Mono", sans-serif;
+  color: #8e94a4;
+}
+h1 {
+  font-size: 25px;
+  color: #fff;
+}
+section {
+  display: grid;
+  grid-template-columns: [start] 800px [end];
+  grid-template-rows: [start] 40px [row1] 70px [row2] 400px [end];
+  place-content: center;
+  gap: 20px;
+  padding-top: 60px;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    color: #fff;
+  }
+  .input-container {
+    position: relative;
+    input {
+      background: #1f2a48;
+      border-radius: 10px;
+      border: none;
+      width: 100%;
+      padding: 20px 150px 20px 70px;
+    }
+    img {
+      z-index: 5;
+      position: absolute;
+      top: 21px;
+      left: 25px;
+    }
+    button {
+      position: absolute;
+      z-index: 5;
+      top: 8px;
+      right: 8px;
+      width: 120px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background: #0079fe;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  .content-container {
+    background: #1f2a48;
+    border-radius: 10px;
+    .profile-header {
+      display: grid;
+      grid-template-columns: [start] 160px [line1] 580px [end];
+      grid-template-rows: [start] 140px [end];
+      padding: 30px 30px 5px;
+      .text{
+        display: grid;
+        grid-template-columns: [start] 290px [line1] 290px [end];
+        grid-template-rows: [start] 30px [row1] 30px [row2] 80px [end];
+        .initial-date{
+            text-align: end;
+            padding-top: 5px;
+        }
+        #id{
+            color: #0079fe;
+        }
+        #bio{
+            grid-column: start / end;
+            grid-row: row2 / end;
+            padding-top: 10px;
+        }
+      }
+    }
+    .portfolio-data{
+        background: #141c2f;
+        border-radius: 10px;
+        width: 580px;
+        display: flex;
+        margin-left: 190px;
+        padding: 20px 30px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            span{
+                color: #fff;
+            }
+        }
+    }
+    .other-data {
+        display: grid;
+        grid-template-columns: [start] 290px [line1] 290px [end];
+        grid-template-rows: [start] 30px [row1] 30px [end];
+        margin: 40px 0 0 190px;
+      p {
+        svg {
+            margin-right: 10px;
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
 }

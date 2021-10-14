@@ -6,7 +6,166 @@
   padding: 0;
 }
 
-body, button {
-  font: 400 20px 'Space Mono', sans-serif;
+body {
+  background: #141c2f;
+}
+
+body,
+button,
+h1,
+input {
+  font: 700 17px "Space Mono", sans-serif;
+  color: #8e94a4;
+}
+
+h1 {
+  font-size: 25px;
+  color: #fff;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [start] 800px [end];
+      grid-template-columns: [start] 800px [end];
+  -ms-grid-rows: [start] 40px [row1] 70px [row2] 400px [end];
+      grid-template-rows: [start] 40px [row1] 70px [row2] 400px [end];
+  place-content: center;
+  gap: 20px;
+  padding-top: 60px;
+}
+
+section .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+}
+
+section .input-container {
+  position: relative;
+}
+
+section .input-container input {
+  background: #1f2a48;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  padding: 20px 150px 20px 70px;
+}
+
+section .input-container img {
+  z-index: 5;
+  position: absolute;
+  top: 21px;
+  left: 25px;
+}
+
+section .input-container button {
+  position: absolute;
+  z-index: 5;
+  top: 8px;
+  right: 8px;
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background: #0079fe;
+  color: white;
+  cursor: pointer;
+}
+
+section .content-container {
+  background: #1f2a48;
+  border-radius: 10px;
+}
+
+section .content-container .profile-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [start] 160px [line1] 580px [end];
+      grid-template-columns: [start] 160px [line1] 580px [end];
+  -ms-grid-rows: [start] 140px [end];
+      grid-template-rows: [start] 140px [end];
+  padding: 30px 30px 5px;
+}
+
+section .content-container .profile-header .text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [start] 290px [line1] 290px [end];
+      grid-template-columns: [start] 290px [line1] 290px [end];
+  -ms-grid-rows: [start] 30px [row1] 30px [row2] 80px [end];
+      grid-template-rows: [start] 30px [row1] 30px [row2] 80px [end];
+}
+
+section .content-container .profile-header .text .initial-date {
+  text-align: end;
+  padding-top: 5px;
+}
+
+section .content-container .profile-header .text #id {
+  color: #0079fe;
+}
+
+section .content-container .profile-header .text #bio {
+  grid-column: start / end;
+  grid-row: row2 / end;
+  padding-top: 10px;
+}
+
+section .content-container .portfolio-data {
+  background: #141c2f;
+  border-radius: 10px;
+  width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 190px;
+  padding: 20px 30px;
+}
+
+section .content-container .portfolio-data .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section .content-container .portfolio-data .card span {
+  color: #fff;
+}
+
+section .content-container .other-data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [start] 290px [line1] 290px [end];
+      grid-template-columns: [start] 290px [line1] 290px [end];
+  -ms-grid-rows: [start] 30px [row1] 30px [end];
+      grid-template-rows: [start] 30px [row1] 30px [end];
+  margin: 40px 0 0 190px;
+}
+
+section .content-container .other-data p svg {
+  margin-right: 10px;
+}
+
+section .content-container .other-data p svg path {
+  fill: #fff;
 }
 /*# sourceMappingURL=style.css.map */
