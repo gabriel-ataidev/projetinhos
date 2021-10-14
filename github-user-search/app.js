@@ -15,6 +15,7 @@
   const company = document.querySelector("#company");
   const profilePicture = document.querySelector("#profile-picture");
   const date = document.querySelector("#date");
+  const error = document.querySelector(".error");
 
   async function getUser(user) {
     const profileResponse = await fetch(
@@ -26,8 +27,10 @@
 
   function showProfile(user) {
     if(user.name == undefined){
+      error.style.display = 'flex';
       return
     }else{
+      error.style.display = 'none';
       profilePicture.setAttribute("src", user.avatar_url);
       name.innerText = user.name;
       const created = user.created_at.substring(0, 10);

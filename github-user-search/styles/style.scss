@@ -70,6 +70,14 @@ section {
       color: white;
       cursor: pointer;
     }
+    .error{
+        z-index: 10;
+        color: #f83030;
+        position: absolute;
+        right: 150px;
+        top: 20px;
+        display: none;
+    }
   }
   .content-container {
     background: #1f2a48;
