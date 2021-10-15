@@ -16,28 +16,28 @@
   const profilePicture = document.querySelector("#profile-picture");
   const date = document.querySelector("#date");
   const error = document.querySelector(".error");
-
+  
   async function getUser(user) {
     const profileResponse = await fetch(
       `${url}/${user}?client_id${client_id}&client_secret${client_secret}`
-    );
+      );
     const profile = profileResponse.json();
     return profile;
   }
 
   function showProfile(user) {
-    if(user.name == undefined){
-      error.style.display = 'flex';
-      return
-    }else{
-      error.style.display = 'none';
+    if (user.name == undefined) {
+      error.style.display = "flex";
+      return;
+    } else {
+      error.style.display = "none";
       profilePicture.setAttribute("src", user.avatar_url);
       name.innerText = user.name;
       const created = user.created_at.substring(0, 10);
       date.innerText = created;
       id.innerText = `@${user.login}`;
       if (user.bio === null) {
-        bio.innerText = 'This profile has no bio';
+        bio.innerText = "This profile has no bio";
       } else {
         bio.innerText = user.bio;
       }
@@ -45,27 +45,27 @@
       followers.innerText = user.followers;
       following.innerText = user.following;
       if (user.location === null) {
-        location.innerHTML = 'Not available';
+        location.innerHTML = "Not available";
       } else {
         location.innerText = user.location;
       }
       if (user.twitter === undefined) {
-        twitter.innerHTML = 'Not available';
+        twitter.innerHTML = "Not available";
       } else {
         twitter.innerText = user.twitter;
       }
       if (user.twitter === undefined) {
-        twitter.innerHTML = 'Not available';
+        twitter.innerHTML = "Not available";
       } else {
         twitter.innerText = user.twitter_username;
       }
       if (user.website === undefined) {
-        website.innerHTML = 'Not available';
+        website.innerHTML = "Not available";
       } else {
         website.innerText = user.blog;
       }
       if (user.company === null) {
-        company.innerHTML = 'Not available';
+        company.innerHTML = "Not available";
       } else {
         company.innerText = user.company;
       }
@@ -80,3 +80,15 @@
     }
   });
 })();
+const body = document.querySelector('body');
+const theme = document.querySelector('#theme');
+const themeImg = document.querySelector('#theme-img');
+
+theme.addEventListener('click', () => {
+  body.classList.toggle('light-theme');
+  if(body.classList.contains('light-theme')){
+    theme.innerHTML = 'DARK <img id="theme-img" src="assets/icon-moon.svg"/>';
+  }else{
+    theme.innerHTML = 'lIGHT <img id="theme-img" src="assets/icon-sun.svg"/>';
+  };
+});
