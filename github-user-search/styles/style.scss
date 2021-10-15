@@ -85,30 +85,33 @@ section {
     border-radius: 10px;
     .profile-header {
       display: grid;
-      grid-template-columns: [start] 160px [line1] 580px [end];
-      grid-template-rows: [start] 140px [end];
+      grid-template-columns: [start] 160px [line1] 290px [line2] 290px [end];
+      grid-template-rows: [start] 35px [row1] 35px [row2] 70px [end];
       padding: 30px 30px 5px;
       #profile-picture {
         width: 117px;
         height: 117px;
         border-radius: 50%;
       }
-      .text {
-        display: grid;
-        grid-template-columns: [start] 290px [line1] 290px [end];
-        grid-template-rows: [start] 30px [row1] 30px [row2] 80px [end];
-        .initial-date {
-          text-align: end;
-          padding-top: 5px;
-        }
-        #id {
-          color: #0079fe;
-        }
-        #bio {
-          grid-column: start / end;
-          grid-row: row2 / end;
-          padding-top: 10px;
-        }
+      #name {
+        grid-column: line1 / end;
+        grid-row: start / row1;
+      }
+      .initial-date {
+        grid-column: line2 / end;
+        grid-row: start / row1;
+        text-align: end;
+        padding-top: 5px;
+      }
+      #id {
+        color: #0079fe;
+        grid-column: line1 / end;
+        grid-row: row1 / end;
+      }
+      #bio {
+        grid-column: line1 / end;
+        grid-row: row2 / end;
+        padding-top: 10px;
       }
     }
     .portfolio-data {
@@ -181,6 +184,75 @@ section {
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  section {
+    grid-template-columns: [start] 340px [end];
+    grid-template-rows: [start] 40px [row1] 80px [row2] 520px [end];
+    .input-container{
+        input{
+            font-size: 15px;
+        }
+        button{
+            font-size: 15px;
+            width: 100px;
+        }
+        .error{
+            top: 1px;
+        }
+    }
+    .content-container {
+      .profile-header {
+        grid-template-columns: [start] 130px [line1] 170px [end];
+        grid-template-rows: [start] 40px [row1] 40px [row2] 40px [row3] 70px[end];
+        padding: 20px 20px;
+        font-size: 20px;
+        span {
+          font-size: 14px;
+        }
+        #name {
+          grid-column: line1 / end;
+          grid-row: start / row1;
+          font-size: 17px;
+        }
+        #id {
+          grid-column: line1 / end;
+          grid-row: row1 / row2;
+        }
+        .initial-date {
+          grid-column: line1 / end;
+          grid-row: row2 / row3;
+          padding: 0;
+          text-align: start;
+        }
+        #bio {
+          grid-column: start / end;
+          grid-row: row3 / end;
+        }
+      }
+      .portfolio-data {
+        width: 300px;
+        margin-left: 20px;
+        font-size: 12px;
+        .card{
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            span{
+                font-size: 17px;
+            }
+        }
+      }
+      .other-data {
+        grid-template-columns: [start] 300px [end];
+        grid-template-rows: [start] 20px [row1] 20px [row2] 20px [row3] 20px [row4] 20px [end];
+        margin: 30px 20px;
+        gap: 20px;
+        align-items: center;
       }
     }
   }

@@ -115,10 +115,10 @@ section .content-container {
 section .content-container .profile-header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [start] 160px [line1] 580px [end];
-      grid-template-columns: [start] 160px [line1] 580px [end];
-  -ms-grid-rows: [start] 140px [end];
-      grid-template-rows: [start] 140px [end];
+  -ms-grid-columns: [start] 160px [line1] 290px [line2] 290px [end];
+      grid-template-columns: [start] 160px [line1] 290px [line2] 290px [end];
+  -ms-grid-rows: [start] 35px [row1] 35px [row2] 70px [end];
+      grid-template-rows: [start] 35px [row1] 35px [row2] 70px [end];
   padding: 30px 30px 5px;
 }
 
@@ -128,26 +128,26 @@ section .content-container .profile-header #profile-picture {
   border-radius: 50%;
 }
 
-section .content-container .profile-header .text {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: [start] 290px [line1] 290px [end];
-      grid-template-columns: [start] 290px [line1] 290px [end];
-  -ms-grid-rows: [start] 30px [row1] 30px [row2] 80px [end];
-      grid-template-rows: [start] 30px [row1] 30px [row2] 80px [end];
+section .content-container .profile-header #name {
+  grid-column: line1 / end;
+  grid-row: start / row1;
 }
 
-section .content-container .profile-header .text .initial-date {
+section .content-container .profile-header .initial-date {
+  grid-column: line2 / end;
+  grid-row: start / row1;
   text-align: end;
   padding-top: 5px;
 }
 
-section .content-container .profile-header .text #id {
+section .content-container .profile-header #id {
   color: #0079fe;
+  grid-column: line1 / end;
+  grid-row: row1 / end;
 }
 
-section .content-container .profile-header .text #bio {
-  grid-column: start / end;
+section .content-container .profile-header #bio {
+  grid-column: line1 / end;
   grid-row: row2 / end;
   padding-top: 10px;
 }
@@ -238,5 +238,82 @@ section .content-container .other-data p svg path {
 
 .light-theme section .content-container .other-data p svg path {
   fill: #0b023f;
+}
+
+@media (max-width: 376px) {
+  section {
+    -ms-grid-columns: [start] 340px [end];
+        grid-template-columns: [start] 340px [end];
+    -ms-grid-rows: [start] 40px [row1] 80px [row2] 520px [end];
+        grid-template-rows: [start] 40px [row1] 80px [row2] 520px [end];
+  }
+  section .input-container input {
+    font-size: 15px;
+  }
+  section .input-container button {
+    font-size: 15px;
+    width: 100px;
+  }
+  section .input-container .error {
+    top: 1px;
+  }
+  section .content-container .profile-header {
+    -ms-grid-columns: [start] 130px [line1] 170px [end];
+        grid-template-columns: [start] 130px [line1] 170px [end];
+    -ms-grid-rows: [start] 40px [row1] 40px [row2] 40px [row3] 70px [end];
+        grid-template-rows: [start] 40px [row1] 40px [row2] 40px [row3] 70px [end];
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+  section .content-container .profile-header span {
+    font-size: 14px;
+  }
+  section .content-container .profile-header #name {
+    grid-column: line1 / end;
+    grid-row: start / row1;
+    font-size: 17px;
+  }
+  section .content-container .profile-header #id {
+    grid-column: line1 / end;
+    grid-row: row1 / row2;
+  }
+  section .content-container .profile-header .initial-date {
+    grid-column: line1 / end;
+    grid-row: row2 / row3;
+    padding: 0;
+    text-align: start;
+  }
+  section .content-container .profile-header #bio {
+    grid-column: start / end;
+    grid-row: row3 / end;
+  }
+  section .content-container .portfolio-data {
+    width: 300px;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  section .content-container .portfolio-data .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+  }
+  section .content-container .portfolio-data .card span {
+    font-size: 17px;
+  }
+  section .content-container .other-data {
+    -ms-grid-columns: [start] 300px [end];
+        grid-template-columns: [start] 300px [end];
+    -ms-grid-rows: [start] 20px [row1] 20px [row2] 20px [row3] 20px [row4] 20px [end];
+        grid-template-rows: [start] 20px [row1] 20px [row2] 20px [row3] 20px [row4] 20px [end];
+    margin: 30px 20px;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
