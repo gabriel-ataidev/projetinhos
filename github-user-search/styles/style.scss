@@ -70,6 +70,10 @@ section {
       background: #0079fe;
       color: white;
       cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        background: #0251a5;
+      }
     }
     .error {
       z-index: 10;
