@@ -120,5 +120,78 @@ main .rock {
   top: 150px;
   left: 80px;
 }
+
+.rules-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 30px 30px 0 auto;
+  color: white;
+  letter-spacing: 2px;
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.rules-button:hover {
+  color: #3a4362;
+  background: #fff;
+  font-weight: 700;
+}
+
+.rules-bg {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: rgba(7, 7, 7, 0.651);
+  width: 100vw;
+  height: 100vh;
+}
+
+.rules-bg .rules-modal {
+  opacity: 1;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.rules-bg .rules-modal .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.rules-bg .rules-modal .text .close-button {
+  cursor: pointer;
+  height: 20px;
+  width: auto;
+}
+
+.rules-bg .rules-modal .rules-img {
+  padding: 30px 20px 10px;
 }
 /*# sourceMappingURL=style.css.map */
