@@ -12,5 +12,113 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   font: 600 15px 'Barlow Semi Condensed', sans-serif;
+  overflow-y: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto 0;
+  padding: 15px 20px;
+  border: 5px solid #516079;
+  border-radius: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 700px;
+}
+
+header img {
+  height: 100px;
+  width: auto;
+}
+
+header .score {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: 10px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 10px 50px;
+}
+
+header .score span {
+  color: #354b90;
+  font-size: 16px;
+}
+
+header .score p {
+  color: #3a4362;
+  font-size: 60px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  max-width: 310px;
+  margin: 100px auto 0;
+}
+
+main .triangle {
+  text-align: center;
+}
+
+main .card {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 150px;
+  height: 150px;
+  border: 17px solid #5671f6;
+  position: absolute;
+  -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
+          box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -60px;
+  left: -30px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+main .card img {
+  height: 60px;
+  width: auto;
+}
+
+main .card:hover {
+  opacity: 0.8;
+}
+
+main .scissors {
+  border-color: #ecaa22;
+  -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #d18801;
+          box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #d18801;
+  position: absolute;
+  top: -60px;
+  left: 190px;
+}
+
+main .rock {
+  border-color: #dd405d;
+  -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #e41a3f;
+          box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #e41a3f;
+  position: absolute;
+  top: 150px;
+  left: 80px;
+}
 }
 /*# sourceMappingURL=style.css.map */
