@@ -9,9 +9,39 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <img src="images/logo.svg">
+        <div class="score">
+            <span>SCORE</span>
+            <p>12</p>
+        </div>
+    </header>
+    <main>   
+        <img class="triangle" src="images/bg-triangle.svg">
+        <div class="card paper">
+            <img src="images/icon-paper.svg">
+        </div>
+        <div class="card scissors">
+            <img src="images/icon-scissors.svg">
+        </div>
+        <div class="card rock">
+            <img src="images/icon-rock.svg">
+        </div>
+        
+    </main>
+    <div class="rules-button" onclick="openRules()">
+        <span>RULES</span>
+    </div>
+    <div class="rules-bg">
+        <div class="rules-modal">
+            <div class="text">
+                <span>RULES</span>
+                <img class="close-button" onclick="closeRules()" src="images/icon-close.svg">
+            </div>
+            <img class="rules-img" src="images/image-rules.svg">
+        </div>
+    </div>
     
-
-
 
     <script src="main.js"></script>
 </body>
