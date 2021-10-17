@@ -41,25 +41,52 @@ header {
     }
   }
 }
-main{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 310px;
-    margin: 100px auto 0;
-    .triangle{
-        text-align: center;
-    }
-    .card{
-        display: grid;
-        place-items: center;
-        width: 150px;
-        height: 150px;
-        border: 17px solid #5671f6;
-        position: absolute;
-        box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
-        background: #fff;
-        border-radius: 50%;
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 310px;
+  margin: 100px auto 0;
+  .triangle {
+    text-align: center;
+  }
+}
+.card {
+  display: grid;
+  place-items: center;
+  width: 150px;
+  height: 150px;
+  border: 17px solid #5671f6;
+  position: absolute;
+  box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -60px;
+  left: -30px;
+  transition: all 0.4s ease-in-out;
+  img {
+    height: 60px;
+    width: auto;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.scissors {
+  border-color: #ecaa22;
+  box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #d18801;
+  position: absolute;
+  top: -60px;
+  left: 190px;
+}
+.rock {
+  border-color: #dd405d;
+  box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #e41a3f;
+  position: absolute;
+  top: 150px;
+  left: 80px;
+}
         cursor: pointer;
         top: -60px;
         left: -30px;
