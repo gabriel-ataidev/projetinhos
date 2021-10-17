@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <img src="images/logo.svg">
-        <div class="score">
-            <span>SCORE</span>
-            <p>12</p>
-        </div>
+      <img src="images/logo.svg" />
+      <div class="score">
+        <span>SCORE</span>
+        <p class="score-number">0</p>
+      </div>
     </header>
-    <main>   
-        <img class="triangle" src="images/bg-triangle.svg">
-        <div class="card paper">
-            <img src="images/icon-paper.svg">
-        </div>
-        <div class="card scissors">
-            <img src="images/icon-scissors.svg">
-        </div>
-        <div class="card rock">
-            <img src="images/icon-rock.svg">
-        </div>
-        
+    <main>
+      <img class="triangle" src="images/bg-triangle.svg" />
+      <div class="card paper" onclick="paperSelected()">
+        <img src="images/icon-paper.svg" />
+      </div>
+      <div class="card scissors" onclick="scissorsSelected()">
+        <img src="images/icon-scissors.svg" />
+      </div>
+      <div class="card rock" onclick="rockSelected()">
+        <img src="images/icon-rock.svg" />
+      </div>
     </main>
     <div class="rules-button" onclick="openRules()">
-        <span>RULES</span>
+      <span>RULES</span>
     </div>
     <div class="rules-bg">
-        <div class="rules-modal">
-            <div class="text">
-                <span>RULES</span>
-                <img class="close-button" onclick="closeRules()" src="images/icon-close.svg">
-            </div>
-            <img class="rules-img" src="images/image-rules.svg">
+      <div class="rules-modal">
+        <div class="text">
+          <span>RULES</span>
+          <img
+            class="close-button"
+            onclick="closeRules()"
+            src="images/icon-close.svg"
+          />
         </div>
+        <img class="rules-img" src="images/image-rules.svg" />
+      </div>
     </div>
-    
+
+    <div class="result">
+      <div class="card-container">
+        <span>YOU PICKED</span>
+        <div class="card chosen-card result-card"></div>
+      </div>
+      <div class="outcome">
+        <button class="play-button" onclick="playButton()">PLAY AGAIN</button>
+      </div>
+      <div class="card-container">
+        <span>THE HOUSE PICKED</span>
+        <div class="card result-card card2"></div>
+      </div>
+    </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
