@@ -314,7 +314,8 @@ main .triangle {
           box-shadow: inset 0 6px 0 #1f3756;
 }
 
-.icon-paper2, .icon-paper {
+.icon-paper2,
+.icon-paper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,7 +325,8 @@ main .triangle {
           box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
 }
 
-.icon-rock, .icon-rock2 {
+.icon-rock,
+.icon-rock2 {
   background: #fff;
   border-color: #dd405d;
   -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #e41a3f;
@@ -334,7 +336,8 @@ main .triangle {
   display: flex;
 }
 
-.icon-scissors2, .icon-scissors {
+.icon-scissors2,
+.icon-scissors {
   background: #fff;
   border-color: #ecaa22;
   -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #d18801;
@@ -357,5 +360,79 @@ main .triangle {
 
 .image {
   margin: auto;
+}
+
+@media (max-width: 376px) {
+  header {
+    margin: 20px;
+  }
+  header img {
+    height: 60px;
+    width: auto;
+  }
+  header .score {
+    padding: 10px 25px 0;
+  }
+  header .score p {
+    max-height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main {
+    margin-top: 170px;
+  }
+  main .paper {
+    top: -60px;
+    left: -20px;
+  }
+  main .scissors {
+    top: -60px;
+    left: 180px;
+  }
+  main .rock {
+    top: 118px;
+    left: 80px;
+  }
+  .rules-button {
+    margin: 50px auto;
+    left: 23px;
+  }
+  .rules-bg .rules-modal {
+    padding: 15px;
+  }
+  .rules-bg .rules-modal img {
+    height: 270px;
+    width: auto;
+  }
+  .result {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 375px;
+  }
+  .result .outcome {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 40px;
+  }
+  .result .card-container .result-card {
+    width: 140px;
+    height: 140px;
+    margin: 15px;
+  }
+  .result .card-container .result-card img {
+    height: 60px;
+    width: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
