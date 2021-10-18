@@ -58,7 +58,6 @@ main {
   height: 150px;
   border: 17px solid #5671f6;
   position: absolute;
-  box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
   background: #fff;
   border-radius: 50%;
   cursor: pointer;
@@ -86,6 +85,10 @@ main {
   position: absolute;
   top: 150px;
   left: 80px;
+}
+.paper{
+  border: 17px solid #5671f6;
+  box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
 }
 .rules-button {
   display: flex;
@@ -132,6 +135,12 @@ main {
         cursor: pointer;
         height: 20px;
         width: auto;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          path {
+            fill: #000;
+          }
+        }
       }
     }
     .rules-img {
@@ -149,6 +158,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    .outcome-text {
+      display: none;
+    }
     h1 {
       color: #fff;
       font-size: 50px;
@@ -157,6 +169,8 @@ main {
       font: 600 14px "Barlow Semi Condensed", sans-serif;
       color: #2f50f7;
       letter-spacing: 2px;
+      display: none;
+      order: 2;
       padding: 10px 50px;
       border-radius: 5px;
       border: none;
@@ -165,6 +179,7 @@ main {
       transition: all 0.4s ease-in-out;
       &:hover {
         opacity: 0.75;
+        color: #e41a3f;
       }
     }
   }
@@ -186,6 +201,9 @@ main {
       img {
         height: 80px;
         width: auto;
+      }
+      .icon {
+        display: none;
       }
     }
   }
@@ -211,18 +229,31 @@ main {
   background: #1f3756;
   box-shadow: inset 0 6px 0 #1f3756;
 }
-.a-paper {
+.icon-paper2, .icon-paper {
+  display: flex;
   background: #fff;
   border: 17px solid #5671f6;
   box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
 }
-.a-rock {
+.icon-rock, .icon-rock2 {
   background: #fff;
   border-color: #dd405d;
   box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #e41a3f;
+  display: flex;
 }
-.a-scissors {
+.icon-scissors2, .icon-scissors {
   background: #fff;
   border-color: #ecaa22;
   box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #d18801;
+  display: flex;
+}
+.result-card{
+  display: none;
+}
+.bg-card {
+  display: flex;
+  z-index: -5;
+}
+.image{
+  margin: auto;
 }

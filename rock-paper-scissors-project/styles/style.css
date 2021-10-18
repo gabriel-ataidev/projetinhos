@@ -83,8 +83,6 @@ main .triangle {
   height: 150px;
   border: 17px solid #5671f6;
   position: absolute;
-  -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
-          box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
   background: #fff;
   border-radius: 50%;
   cursor: pointer;
@@ -119,6 +117,12 @@ main .triangle {
   position: absolute;
   top: 150px;
   left: 80px;
+}
+
+.paper {
+  border: 17px solid #5671f6;
+  -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
+          box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
 }
 
 .rules-button {
@@ -191,6 +195,12 @@ main .triangle {
   cursor: pointer;
   height: 20px;
   width: auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.rules-bg .rules-modal .text .close-button:hover path {
+  fill: #000;
 }
 
 .rules-bg .rules-modal .rules-img {
@@ -222,6 +232,10 @@ main .triangle {
           align-items: center;
 }
 
+.result .outcome .outcome-text {
+  display: none;
+}
+
 .result .outcome h1 {
   color: #fff;
   font-size: 50px;
@@ -231,6 +245,10 @@ main .triangle {
   font: 600 14px "Barlow Semi Condensed", sans-serif;
   color: #2f50f7;
   letter-spacing: 2px;
+  display: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   padding: 10px 50px;
   border-radius: 5px;
   border: none;
@@ -242,6 +260,7 @@ main .triangle {
 
 .result .outcome .play-button:hover {
   opacity: 0.75;
+  color: #e41a3f;
 }
 
 .result .card-container {
@@ -276,6 +295,10 @@ main .triangle {
   width: auto;
 }
 
+.result .card-container .result-card .icon {
+  display: none;
+}
+
 .result .card-shadow::after {
   content: "";
   width: 510px;
@@ -293,24 +316,48 @@ main .triangle {
           box-shadow: inset 0 6px 0 #1f3756;
 }
 
-.a-paper {
+.icon-paper2, .icon-paper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #fff;
   border: 17px solid #5671f6;
   -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
           box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #2f50f7;
 }
 
-.a-rock {
+.icon-rock, .icon-rock2 {
   background: #fff;
   border-color: #dd405d;
   -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #e41a3f;
           box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #e41a3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.a-scissors {
+.icon-scissors2, .icon-scissors {
   background: #fff;
   border-color: #ecaa22;
   -webkit-box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #d18801;
           box-shadow: inset 0 6px 0 #00000033, 0 7px 0 #d18801;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.result-card {
+  display: none;
+}
+
+.bg-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -5;
+}
+
+.image {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
