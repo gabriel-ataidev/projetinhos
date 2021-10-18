@@ -35,11 +35,20 @@
       <div class="rules-modal">
         <div class="text">
           <span>RULES</span>
-          <img
+          <svg
             class="close-button"
             onclick="closeRules()"
-            src="images/icon-close.svg"
-          />
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+          >
+            <path
+              fill="#3B4262"
+              fill-rule="evenodd"
+              d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z"
+              opacity=".25"
+            />
+          </svg>
         </div>
         <img class="rules-img" src="images/image-rules.svg" />
       </div>
@@ -48,14 +57,34 @@
     <div class="result">
       <div class="card-container">
         <span>YOU PICKED</span>
-        <div class="card chosen-card result-card"></div>
+        <div class="card result-card chosen-card icon-rock">
+          <img class="image" src="images/icon-rock.svg" />
+        </div>
+        <div class="card result-card chosen-card icon-scissors">
+          <img class="image" src="images/icon-scissors.svg" />
+        </div>
+        <div class="card result-card chosen-card icon-paper">
+          <img class="image" src="images/icon-paper.svg" />
+        </div>
       </div>
       <div class="outcome">
+        <h1 class="win outcome-text">YOU WIN</h1>
+        <h1 class="lose outcome-text">YOU LOSE</h1>
+        <h1 class="draw outcome-text">DRAW</h1>
         <button class="play-button" onclick="playButton()">PLAY AGAIN</button>
       </div>
       <div class="card-container">
         <span>THE HOUSE PICKED</span>
-        <div class="card result-card card2"></div>
+        <div class="card result-card card2 bg-card"></div>
+        <div class="card result-card card2 icon-rock2">
+          <img class="image" src="images/icon-rock.svg" />
+        </div>
+        <div class="card result-card card2 icon-paper2">
+          <img class="image" src="images/icon-paper.svg" />
+        </div>
+        <div class="card result-card card2 icon-scissors2">
+          <img class="image" src="images/icon-scissors.svg" />
+        </div>
       </div>
     </div>
 
