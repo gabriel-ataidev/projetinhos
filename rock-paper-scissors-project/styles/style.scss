@@ -158,6 +158,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    .win{
+      color: #008000;
+    }
+    .lose{
+      color: #ff0000;
+    }
     .outcome-text {
       display: none;
     }
@@ -205,22 +211,6 @@ main {
       .icon {
         display: none;
       }
-    }
-  }
-  .card-shadow {
-    &::after {
-      content: "";
-      width: 510px;
-      height: 510px;
-      background: radial-gradient(
-        circle at center,
-        rgba(31, 31, 31, 0.376) 40%,
-        rgba(73, 73, 73, 0.267) 60%,
-        rgba(73, 73, 73, 0.171) 0%
-      );
-      position: fixed;
-      z-index: -1;
-      border-radius: 50%;
     }
   }
 }

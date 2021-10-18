@@ -232,6 +232,14 @@ main .triangle {
           align-items: center;
 }
 
+.result .outcome .win {
+  color: #008000;
+}
+
+.result .outcome .lose {
+  color: #ff0000;
+}
+
 .result .outcome .outcome-text {
   display: none;
 }
@@ -297,16 +305,6 @@ main .triangle {
 
 .result .card-container .result-card .icon {
   display: none;
-}
-
-.result .card-shadow::after {
-  content: "";
-  width: 510px;
-  height: 510px;
-  background: radial-gradient(circle at center, rgba(31, 31, 31, 0.376) 40%, rgba(73, 73, 73, 0.267) 60%, rgba(73, 73, 73, 0.171) 0%);
-  position: fixed;
-  z-index: -1;
-  border-radius: 50%;
 }
 
 .card2 {
