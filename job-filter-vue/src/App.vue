@@ -1,21 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <FilterContainer msg="Welcome to Your Vue.js App"/>
+    <FilterContainer />
+    <Cards />
   </div>
 </template>
 
 <script>
-import FilterContainer from './components/FilterContainer.vue'
+
+import FilterContainer from "./components/FilterContainer.vue";
+import Cards from "./components/Cards.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     FilterContainer,
-  }
-}
+    Cards,
+  },
+};
 </script>
 
-<style>
-
+<style lang="less">
+#app {
+  font-family: "Spartan", sans-serif;
+}
 </style>

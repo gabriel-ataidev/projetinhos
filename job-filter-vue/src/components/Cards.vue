@@ -1,13 +1,12 @@
 <template>
-  <div id="filter">
-      <p>filter is working</p>
+  <div id="cards">
+    <p>cards is working</p>
   </div>
 </template>
 
 <script>
 export default {
-    name: "FilterContainer",
-
+    name: 'Cards',
 }
 </script>
 
