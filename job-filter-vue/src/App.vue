@@ -9,6 +9,7 @@
 
 import FilterContainer from "./components/FilterContainer.vue";
 import Cards from "./components/Cards.vue";
+import axios from 'axios';
 
 export default {
   name: "App",
@@ -16,7 +17,12 @@ export default {
     FilterContainer,
     Cards,
   },
-};
+  created() {
+    axios.get('http://localhost:3000/data').then( response => {
+      console.log(response);
+    });
+  },
+}
 </script>
 
 <style lang="less">
