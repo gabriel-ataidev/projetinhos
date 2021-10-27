@@ -1,6 +1,5 @@
 <template>
   <div id="cards">
-    <p>cards is working</p>
     <div
       v-for="(n, index) in 10"
       :key="index"
@@ -46,12 +45,12 @@
 import axios from "axios";
 
 export default {
-    name: 'Cards',
-}
   name: "Cards",
   data() {
     return {
       cards: null,
+      cardFeatured: null,
+      featured: null,
     };
   },
   created() {
@@ -62,9 +61,8 @@ export default {
 };
 </script>
 
-<style>
-
-</style>#cards {
+<style lang="less" scoped>
+#cards {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
