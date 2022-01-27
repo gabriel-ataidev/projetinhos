@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -11,22 +11,29 @@ html {
 }
 
 /*========== Variables Dark theme ==========*/
+body.dark-theme {
+  $title-color: #f1f3f2;
+  $text-color: #c7d1cc;
+  $body-color: #1d2521;
+  $container-color: #27302c;
+}
+
 /*========== Button Dark/Light ==========*/
 .change-theme {
   position: absolute;
   right: 1rem;
   top: 1.8rem;
-  color: #707070;
+  color: $text-color;
   font-size: 1rem;
   cursor: pointer;
 }
 
 body {
-  margin: 3rem 0 0 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.938rem;
-  background-color: #FBFEFD;
-  color: #707070;
+  margin: $header-height 0 0 0;
+  font-family: $body-font;
+  font-size: $normal-font-size;
+  background-color: $body-color;
+  color: $text-color;
   line-height: 1.6;
 }
 
@@ -51,4 +58,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-/*# sourceMappingURL=styles.css.map */
