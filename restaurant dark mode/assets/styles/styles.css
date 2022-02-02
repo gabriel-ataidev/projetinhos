@@ -114,8 +114,8 @@ header .nav .nav__logo:hover {
 }
 
 header .nav .nav__menu {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .nav .nav__menu .nav__list {
@@ -150,8 +150,8 @@ header .nav .show-menu {
 header .nav__link, header .nav__logo, header .nav__toggle {
   color: #707070;
   font-weight: 500;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .scroll-header {
@@ -166,6 +166,38 @@ header .nav__link, header .nav__logo, header .nav__toggle {
   gap: 1.5rem;
 }
 
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3rem;
+  background: rgba(6, 156, 84, 0.5);
+  border-radius: .4rem;
+  z-index: 10;
+  -webkit-transition: all ease-in-out .4s;
+  transition: all ease-in-out .4s;
+  visibility: hidden;
+}
+
+.scrolltop:hover {
+  background-color: #048654;
+  color: white;
+}
+
+.scroll-top {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
@@ -175,8 +207,8 @@ header .nav__link, header .nav__logo, header .nav__toggle {
     padding: 1.5rem 0 1rem;
     text-align: center;
     background-color: #FBFEFD;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
