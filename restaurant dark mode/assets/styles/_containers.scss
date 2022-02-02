@@ -19,3 +19,59 @@
   font-weight: $font-medium;
   margin-bottom: $mb-1;
 }
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $body-color;
+  .bd-container{
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin: 0 $mb-2;
+  }
+  .nav{
+    max-width: 1024px;
+    height: $header-height;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    .nav__logo{
+      font-size: 1.5rem;
+      z-index: 1000;
+      &:hover{
+        color: $first-color
+      }
+    }
+    .nav__menu{
+      transition: all .5s ease-in-out;
+      .nav__list{
+        display: flex;
+        gap: 2rem;
+        .nav__item{
+          margin-bottom: $mb-2;
+          margin: auto 0;
+          .nav__link{
+            &:hover{
+              color: $first-color;
+            }
+          }
+        }
+      }
+    }
+    .nav__toggle{
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .show-menu{
+      top: $header-height
+    }
+    &__link, &__logo, &__toggle{
+      color: $text-color;
+      font-weight: $font-medium;
+      transition: .4s;
+    }
+  }
+}
