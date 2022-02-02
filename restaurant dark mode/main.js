@@ -44,3 +44,13 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 // }
 // window.addEventListener("scroll", scrollActive);
 
+//change background header
+function scrollHeader() {
+  const nav = document.getElementById("header");
+  if (this.scrollY >= 200) {
+    nav.classList.add("scroll-header");
+  } else {
+    nav.classList.remove("scroll-header");
+  }
+}
+window.addEventListener('scroll', scrollHeader);
