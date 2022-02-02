@@ -58,6 +58,9 @@ header{
               color: $first-color;
             }
           }
+          .active-link{
+            color: $first-color;
+          }
         }
       }
     }
@@ -75,6 +78,11 @@ header{
     }
   }
 }
+.bd-grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu{
     position: fixed;
@@ -88,5 +96,8 @@ header{
     box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
     border-radius: 0 0 1rem 1rem;
     z-index: $z-fixed;
+    .nav__list{
+      flex-direction: column;
+    }
   }
 }

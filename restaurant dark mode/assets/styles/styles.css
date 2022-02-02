@@ -134,6 +134,10 @@ header .nav .nav__menu .nav__list .nav__item .nav__link:hover {
   color: #069C54;
 }
 
+header .nav .nav__menu .nav__list .nav__item .active-link {
+  color: #069C54;
+}
+
 header .nav .nav__toggle {
   font-size: 2rem;
   cursor: pointer;
@@ -171,6 +175,12 @@ header .nav__link, header .nav__logo, header .nav__toggle {
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
     z-index: 100;
+  }
+  .nav__menu .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=styles.css.map */
