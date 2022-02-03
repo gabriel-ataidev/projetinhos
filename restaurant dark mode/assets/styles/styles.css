@@ -52,7 +52,7 @@ img {
   height: auto;
 }
 
-section {
+.section {
   padding: 4rem 0 2rem;
 }
 
@@ -81,12 +81,6 @@ header {
   left: 0;
   z-index: 100;
   background-color: #FBFEFD;
-}
-
-header .bd-container {
-  max-width: 960px;
-  width: calc(100% - 2rem);
-  margin: 0 1rem;
 }
 
 header .nav {
@@ -154,9 +148,15 @@ header .nav__link, header .nav__logo, header .nav__toggle {
   transition: 0.4s;
 }
 
+.bd-container {
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
+}
+
 .scroll-header {
-  -webkit-transition: all ease-in-out .4s;
-  transition: all ease-in-out .4s;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
   padding-bottom: 10px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -175,12 +175,12 @@ header .nav__link, header .nav__logo, header .nav__toggle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: .3rem;
+  padding: 0.3rem;
   background: rgba(6, 156, 84, 0.5);
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   z-index: 10;
-  -webkit-transition: all ease-in-out .4s;
-  transition: all ease-in-out .4s;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
   visibility: hidden;
 }
 
@@ -237,14 +237,38 @@ header .nav__link, header .nav__logo, header .nav__toggle {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: .75rem 1rem;
-  border-radius: .5rem;
-  -webkit-transition: all ease-in-out .4s;
-  transition: all ease-in-out .4s;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
 }
 
 .button:hover {
   background-color: #048654;
+}
+
+.about .about__container .about__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about__container .about__data .about__description {
+  margin-bottom: 1.5rem;
+}
+
+.about .about__container .about__img {
+  width: 280px;
+  border-radius: 0.5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 @media screen and (max-width: 768px) {

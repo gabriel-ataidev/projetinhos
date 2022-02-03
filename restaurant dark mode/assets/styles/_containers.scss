@@ -1,4 +1,4 @@
-section {
+.section {
   padding: 4rem 0 2rem;
 }
 
@@ -26,11 +26,6 @@ header {
   left: 0;
   z-index: $z-fixed;
   background-color: $body-color;
-  .bd-container {
-    max-width: 960px;
-    width: calc(100% - 2rem);
-    margin: 0 $mb-2;
-  }
   .nav {
     max-width: 1024px;
     height: $header-height;
@@ -80,8 +75,13 @@ header {
     }
   }
 }
+.bd-container {
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin: 0 $mb-2;
+}
 .scroll-header {
-  transition: all ease-in-out .4s;
+  transition: all ease-in-out 0.4s;
   padding-bottom: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -94,18 +94,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .3rem;
-  background: rgba(6, 156, 84, .5);
-  border-radius: .4rem;
+  padding: 0.3rem;
+  background: rgba(6, 156, 84, 0.5);
+  border-radius: 0.4rem;
   z-index: $z-tooltip;
-  transition: all ease-in-out .4s;
+  transition: all ease-in-out 0.4s;
   visibility: hidden;
-  &:hover{
+  &:hover {
     background-color: $first-color-alt;
     color: white;
   }
 }
-.scroll-top{
+.scroll-top {
   visibility: visible;
   bottom: 1.5rem;
 }
@@ -115,39 +115,58 @@ header {
   display: grid;
   gap: 1.5rem;
 }
-.home{
+.home {
   margin: 0 1rem;
-  .home__container{
+  .home__container {
     height: calc(100vh - $header-height);
     align-content: center;
-    .home__data{
-      .home__title{
+    .home__data {
+      .home__title {
         font-size: $biggest-font-size;
         color: $first-color;
         margin-bottom: $mb-1;
       }
-      .home__subtitle{
+      .home__subtitle {
         font-size: $h1-font-size;
         color: $title-color;
         margin-bottom: $mb-4;
       }
     }
-    .home__img{
+    .home__img {
       width: 300px;
       justify-self: center;
     }
   }
 }
-.button{
+.button {
   display: flex;
   background-color: $first-color;
   color: #fff;
   width: fit-content;
-  padding: .75rem 1rem;
-  border-radius: .5rem;
-  transition: all ease-in-out .4s;
-  &:hover{
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all ease-in-out 0.4s;
+  &:hover {
     background-color: $first-color-alt;
+  }
+}
+
+//about
+.about {
+  .about__container {
+    .about__data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .about__description {
+        margin-bottom: $mb-3;
+      }
+    }
+    .about__img {
+      width: 280px;
+      border-radius: 0.5rem;
+      justify-self: center;
+    }
   }
 }
 
