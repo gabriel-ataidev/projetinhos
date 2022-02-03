@@ -271,6 +271,33 @@ header .nav__link, header .nav__logo, header .nav__toggle {
       justify-self: center;
 }
 
+.services .services__container {
+  row-gap: 2.5rem;
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.services .services__container .services__content {
+  text-align: center;
+}
+
+.services .services__container .services__content .services__img {
+  width: 64px;
+  height: 64px;
+  fill: #069C54;
+  margin-bottom: 1rem;
+}
+
+.services .services__container .services__content .services__title {
+  font-size: 1rem;
+  color: #393939;
+  margin-bottom: 0.5rem;
+}
+
+.services .services__container .services__content .services__description {
+  padding: 0 1.5rem;
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
