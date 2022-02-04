@@ -389,6 +389,18 @@ header .nav__link, header .nav__logo, header .nav__toggle {
       justify-self: center;
 }
 
+.contact .contact__container {
+  text-align: center;
+}
+
+.contact .contact__container .contact__data .contact__description {
+  margin-bottom: 0.5rem;
+}
+
+.contact .contact__container .contact__button .button {
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;

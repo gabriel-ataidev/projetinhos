@@ -267,6 +267,23 @@ header {
   }
 }
 
+//contact
+.contact{
+  .contact__container{
+    text-align: center;
+    .contact__data{
+      .contact__description{
+        margin-bottom: $mb-1;
+      }
+    }
+    .contact__button{
+      .button{
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
