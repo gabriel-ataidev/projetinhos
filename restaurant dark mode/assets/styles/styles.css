@@ -298,6 +298,74 @@ header .nav__link, header .nav__logo, header .nav__toggle {
   padding: 0 1.5rem;
 }
 
+.menu .menu__container {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .menu__container .menu__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+          box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+  padding: 0.75rem;
+}
+
+.menu .menu__container .menu__content .menu__img {
+  width: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 1rem;
+}
+
+.menu .menu__container .menu__content .menu__name {
+  font-size: 0.938rem;
+}
+
+.menu .menu__container .menu__content .menu__detail {
+  margin-bottom: 0.5rem;
+}
+
+.menu .menu__container .menu__content .menu__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.625rem 0.813rem;
+  border-radius: 0.5rem 0 0.5rem 0;
+  -webkit-transition: all ease-in-out .4s;
+  transition: all ease-in-out .4s;
+}
+
+.menu .menu__container .menu__content .menu__button:hover {
+  background-color: #048654;
+}
+
+.menu .menu__container .menu__content .menu__detail,
+.menu .menu__container .menu__content .menu__preci {
+  font-size: 0.813rem;
+}
+
+.menu .menu__container .menu__content .menu__name,
+.menu .menu__container .menu__content .menu__preci {
+  font-weight: 600;
+  color: #393939;
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
