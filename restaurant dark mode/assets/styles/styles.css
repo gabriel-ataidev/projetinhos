@@ -366,6 +366,29 @@ header .nav__link, header .nav__logo, header .nav__toggle {
   color: #393939;
 }
 
+.app .app__container .app__data {
+  text-align: center;
+}
+
+.app .app__container .app__data .app__description {
+  margin-bottom: 2.5rem;
+}
+
+.app .app__container .app__data .app__stores {
+  margin-bottom: 2rem;
+}
+
+.app .app__container .app__data .app__stores .app__store {
+  width: 120px;
+  margin: 0 0.5rem;
+}
+
+.app .app__container .app__img {
+  width: 230px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
