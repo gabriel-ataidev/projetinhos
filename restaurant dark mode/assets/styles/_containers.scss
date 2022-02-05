@@ -1,3 +1,26 @@
+body{
+  --title-color: #393939;
+  --text-color: #707070;
+  --body-color: #fbfefd;
+  --container-color: #ffffff;
+}
+body.dark-theme {
+  --title-color: #f1f3f2;
+  --text-color: #c7d1cc;
+  --body-color: #1d2521;
+  --container-color: #27302c;
+}
+
+.change-theme{
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: $text-color;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
 .section {
   padding: 4rem 0 2rem;
 }

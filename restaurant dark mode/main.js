@@ -53,15 +53,24 @@ function scrollHeader() {
     nav.classList.remove("scroll-header");
   }
 }
-window.addEventListener('scroll', scrollHeader);
+window.addEventListener("scroll", scrollHeader);
 
 //show scroll top
 function scrollTop() {
-    const scrollTop = document.getElementById("scroll-top");
-    if (this.scrollY >= 560) {
-      scrollTop.classList.add("scroll-top");
-    } else {
-      scrollTop.classList.remove("scroll-top");
-    }
+  const scrollTop = document.getElementById("scroll-top");
+  if (this.scrollY >= 560) {
+    scrollTop.classList.add("scroll-top");
+  } else {
+    scrollTop.classList.remove("scroll-top");
   }
-  window.addEventListener('scroll', scrollTop);
+}
+window.addEventListener("scroll", scrollTop);
+
+//dark theme
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'bx-sun';
+themeButton.addEventListener('click', () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+});
