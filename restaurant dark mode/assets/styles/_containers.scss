@@ -134,7 +134,6 @@ header {
       }
     }
     .home__img {
-      width: 300px;
       justify-self: center;
     }
   }
@@ -227,8 +226,8 @@ header {
         display: flex;
         padding: 0.625rem 0.813rem;
         border-radius: 0.5rem 0 0.5rem 0;
-        transition: all ease-in-out .4s;
-        &:hover{
+        transition: all ease-in-out 0.4s;
+        &:hover {
           background-color: $first-color-alt;
         }
       }
@@ -246,22 +245,22 @@ header {
 }
 
 //app
-.app{
-  .app__container{
-    .app__data{
+.app {
+  .app__container {
+    .app__data {
       text-align: center;
-      .app__description{
+      .app__description {
         margin-bottom: $mb-5;
       }
-      .app__stores{
+      .app__stores {
         margin-bottom: $mb-4;
-        .app__store{
+        .app__store {
           width: 120px;
           margin: 0 $mb-1;
         }
       }
     }
-    .app__img{
+    .app__img {
       width: 230px;
       justify-self: center;
     }
@@ -269,16 +268,16 @@ header {
 }
 
 //contact
-.contact{
-  .contact__container{
+.contact {
+  .contact__container {
     text-align: center;
-    .contact__data{
-      .contact__description{
+    .contact__data {
+      .contact__description {
         margin-bottom: $mb-1;
       }
     }
-    .contact__button{
-      .button{
+    .contact__button {
+      .button {
         margin: 0 auto;
       }
     }
@@ -286,42 +285,142 @@ header {
 }
 
 //footer
-footer{
-  .footer__container{
+footer {
+  .footer__container {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap: 2rem;
-    .footer__content{
-      .footer__logo{
+    .footer__content {
+      .footer__logo {
         font-size: $h3-font-size;
         color: $first-color;
         font-weight: $font-semi-bold;
       }
-      .footer-desription{
+      .footer-desription {
         display: block;
         font-size: $small-font-size;
-        margin: .25rem 0 $mb-3;
+        margin: 0.25rem 0 $mb-3;
       }
-      .footer__social{
+      .footer__social {
         font-size: 1.5rem;
         color: $title-color;
         margin-right: $mb-2;
       }
-      .footer__link{
+      .footer__link {
         font-size: $h2-font-size;
         color: $title-color;
         margin-bottom: $mb-2;
         transition: all ease-in-out.4s;
-        &:hover{
+        &:hover {
           color: $first-color;
         }
       }
     }
   }
-  .footer__copy{
+  .footer__copy {
     text-align: center;
     font-size: $small-font-size;
     color: $text-color-light;
     margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .home__container,
+  .about__container,
+  .app__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .about__data,
+  .about__initial,
+  .app__data,
+  .app__initial,
+  .contact__container,
+  .app__initial {
+    text-align: initial;
+  }
+  .about__img,
+  .app__img {
+    width: 380px;
+    order: -1;
+  }
+
+  .contact__container {
+    grid-template-columns: 1.75fr 1fr;
+    align-items: center;
+  }
+  .contact__button {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 8rem;
+  }
+
+  .nav {
+    height: calc($header-height + 1.5rem);
+  }
+  .nav__list {
+    display: flex;
+  }
+  .nav__item {
+    margin-left: $mb-5;
+    margin-bottom: 0;
+  }
+  .nav__toggle {
+    display: none;
+  }
+
+  .change-theme {
+    position: initial;
+    margin-left: $mb-2;
+  }
+
+  .home__container {
+    height: 100vh;
+    justify-items: center;
+  }
+
+  .services__container,
+  .menu__container {
+    margin-top: $mb-6;
+  }
+
+  .menu__container {
+    grid-template-columns: repeat(3, 210px);
+    column-gap: 4rem;
+  }
+  .menu__content {
+    padding: 1.5rem;
+  }
+  .menu__img {
+    width: 130px;
+  }
+
+  .app__store {
+    margin: 0 $mb-1 0 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home__img {
+    width: 500px;
+  }
+
+  .about__container,
+  .app__container {
+    column-gap: 7rem;
   }
 }
 

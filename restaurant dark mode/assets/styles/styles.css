@@ -224,7 +224,6 @@ header .nav__link, header .nav__logo, header .nav__toggle {
 }
 
 .home .home__container .home__img {
-  width: 300px;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -348,8 +347,8 @@ header .nav__link, header .nav__logo, header .nav__toggle {
   display: flex;
   padding: 0.625rem 0.813rem;
   border-radius: 0.5rem 0 0.5rem 0;
-  -webkit-transition: all ease-in-out .4s;
-  transition: all ease-in-out .4s;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
 }
 
 .menu .menu__container .menu__content .menu__button:hover {
@@ -443,6 +442,110 @@ footer .footer__copy {
   font-size: 0.813rem;
   color: #A6A6A6;
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 576px) {
+  .home__container,
+  .about__container,
+  .app__container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__data,
+  .about__initial,
+  .app__data,
+  .app__initial,
+  .contact__container,
+  .app__initial {
+    text-align: initial;
+  }
+  .about__img,
+  .app__img {
+    width: 380px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .contact__container {
+    -ms-grid-columns: 1.75fr 1fr;
+        grid-template-columns: 1.75fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__button {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding-top: 8rem;
+  }
+  .nav {
+    height: calc($header-height + 1.5rem);
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__item {
+    margin-left: 2.5rem;
+    margin-bottom: 0;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .change-theme {
+    position: initial;
+    margin-left: 1rem;
+  }
+  .home__container {
+    height: 100vh;
+    justify-items: center;
+  }
+  .services__container,
+  .menu__container {
+    margin-top: 3rem;
+  }
+  .menu__container {
+    -ms-grid-columns: (210px)[3];
+        grid-template-columns: repeat(3, 210px);
+    -webkit-column-gap: 4rem;
+            column-gap: 4rem;
+  }
+  .menu__content {
+    padding: 1.5rem;
+  }
+  .menu__img {
+    width: 130px;
+  }
+  .app__store {
+    margin: 0 0.5rem 0 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__img {
+    width: 500px;
+  }
+  .about__container,
+  .app__container {
+    -webkit-column-gap: 7rem;
+            column-gap: 7rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
