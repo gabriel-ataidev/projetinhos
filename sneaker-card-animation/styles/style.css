@@ -18,6 +18,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .container {
@@ -40,6 +42,8 @@ body {
   padding: 0 5rem;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .container .card .sneaker {
