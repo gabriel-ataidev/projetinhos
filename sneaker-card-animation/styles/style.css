@@ -73,10 +73,14 @@ body {
 .container .card .sneaker img {
   width: 20rem;
   z-index: 2;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .container .card .info h1 {
   font-size: 3rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .container .card .info h3 {
@@ -84,6 +88,8 @@ body {
   padding: 2rem 0;
   color: #585858;
   font-weight: lighter;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .container .card .sizes {
@@ -93,6 +99,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .container .card .sizes button {
@@ -119,7 +127,9 @@ body {
 }
 
 .container .card .purchase {
-  margin-top: 5rem;
+  margin-top: 3rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .container .card .purchase button {
