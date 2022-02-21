@@ -4,6 +4,11 @@ const newUser = {
   avatar: "http://lorempixel.com.br/500/400/",
   city: "São José",
 };
+const userUpdated = {
+  name: "Sandrão",
+  avatar: "http://lorempixel.com.br/500/400/",
+  city: "Itaquera",
+};
 
 function getUser() {
   axios
@@ -23,3 +28,11 @@ function addNewUser() {
     .catch((error) => console.log(error));
 }
 addNewUser();
+
+function updateUser() {
+  axios
+    .put(`${url}/3`, userUpdated)
+    .then((response) => alert(JSON.stringify(response.data)))
+    .catch((error) => console.log(error));
+}
+updateUser();
