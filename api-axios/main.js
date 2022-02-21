@@ -36,3 +36,10 @@ function updateUser() {
     .catch((error) => console.log(error));
 }
 updateUser();
+
+function deleteUser() {
+    axios.delete(`${url}/4`)
+    .then((response) => alert(JSON.stringify(response.data)))
+    .catch((error) => console.log(error))
+}
+deleteUser();
