@@ -24,7 +24,7 @@ getUser();
 function addNewUser() {
   axios
     .post(url, newUser)
-    .then((response) => alert(JSON.stringify(response.data)))
+    .then((response) => console.log(response.data))
     .catch((error) => console.log(error));
 }
 addNewUser();
@@ -43,3 +43,13 @@ function deleteUser() {
     .catch((error) => console.log(error))
 }
 deleteUser();
+
+function getOneUser() {
+    axios.get(`${url}/8`)
+    .then(response => {
+        const data = response.data;
+        renderResults.textContent = JSON.stringify(data);
+    })
+    .catch(error => console.log(error))
+}
+getOneUser();
